@@ -144,7 +144,13 @@ section {
     margin: auto;
     width: 30%;
     max-width: 300px;
-    box-shadow: -40px -40px #e1e1e1;
+    box-shadow: -40px -40px #f4f0f0;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-image-wrapper {
+        box-shadow: -20px -20px #f4f0f0;
+    }
 }
 
 @media only screen and (min-width: 1500px) {
@@ -181,7 +187,7 @@ section {
 .team-image-wrapper {
     margin: auto;
     width: 55%;
-    box-shadow: -50px -50px #e1e1e1;
+    box-shadow: -50px -50px #f4f0f0;
 }
 
 .team-info-wrapper {
@@ -213,8 +219,7 @@ section {
 
 .brand {
     text-align: center;
-    border: 2px solid #e1e1e1;
-    background-color: #e1e1e1;
+    background-color: #f4f0f0;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
     margin: 1% 2.5%;
     padding: 1%;
