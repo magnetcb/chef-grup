@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chef Grup</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/nav.css">
+</head>
+<body class="tr">
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html" id="home-link"> <img src="./images/logo.png" alt="Chef Grup logo" width="120"></a>
+        </div>
+
+        <ul id="menu">
+            <li class="menu-item"><a class="menu-item-link" href="about.html" id="about-link">
+                <span lang="tr">hakkımızda</span>
+                <span lang="en">about</span>
+            </a></li>
+            <li class="menu-item"><a class="menu-item-link" href="brands.html" id="brands-link">
+                <span lang="tr">markalar</span>
+                <span lang="en">brands</span>
+            </a></li>
+            <li class="menu-item"><a class="menu-item-link" href="contact.html" id="contact-link">
+                <span lang="tr">iletişim</span>
+                <span lang="en">contact</span>
+            </a></li>
+            <li class="menu-item" lang="tr"><a class="menu-item-link lang-change" href="#" id="english">english</a></li>
+            <li class="menu-item" lang="en"><a class="menu-item-link lang-change" href="#"  id="turkish">türkçe</a></li>
+        </ul>
+
+        <div id="toggle">
+            <a href="javascript:void(0);" onclick="onMenuIconClicked()" id="menu-icon">
+                <i class="fa fa-2x fab fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="spacer"></div>
+    <main id="main">
+        <section id="contact">
+            <div class="container">  
+                <form id="contact" action="" method="post">
+                    <h3 lang="tr">Bize Ulaşın</h3>
+                    <h3 lang="en">Contact Us</h3>
+                    <fieldset>
+                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+                    </fieldset>
+                    <fieldset>
+                        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </fieldset>
+                </form>
+              </div>
+        </section>
+    </main>
+    <div class="spacer"></div>
+    <footer id="footer">
+        <div class="copyright flex-2">
+            <p class="copyright-text" lang="tr"><strong>© Chef Grup, 2018</strong></p>
+            <p class="copyright-text" lang="en"><strong>© Chef Group, 2018</strong></p>
+        </div>
+        <ul id="social-links" class="flex-4">
+            <li class="social-link-item"><a href="#" class="social-link"><img class="social-link-image" src="./icons/facebook-brands.svg" alt="Chef Grup Facebook" width="30"></a></li>
+            <li class="social-link-item"><a href="#" class="social-link"><img class="social-link-image" src="./icons/instagram-brands.svg" alt="Chef Grup Instagram" width="30"></a></li>
+            <li class="social-link-item"><a href="#" class="social-link"><img class="social-link-image" src="./icons/twitter-square-brands.svg" alt="Chef Grup Twitter" width="30"></a></li>
+        </ul>
+        <div class="flex-2"></div>
+    </footer>
+    <div class="spacer"></div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
