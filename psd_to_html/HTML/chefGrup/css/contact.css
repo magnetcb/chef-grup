@@ -1,5 +1,4 @@
 .container {
-	min-width: 400px;
 	width: 60%;
 	margin: auto;
 	margin-top: 5%;
@@ -44,6 +43,17 @@ label {
 .flex-3 {flex: 3;}
 .flex-4 {flex: 4;}
 .flex-6 {flex: 6;}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
+
+	.form-group {
+		display: flex;
+		flex-direction: column;
+	}
+}
 
 #contact input[type="text"], 
 #contact input[type="email"], 
