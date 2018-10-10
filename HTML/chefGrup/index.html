@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chef Grup</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/nav.css">
+</head>
+<body class="tr">
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html" id="home-link"> <img src="./images/logo.png" alt="Chef Grup logo" width="120"></a>
+        </div>
+
+        <ul id="menu">
+            <li class="menu-item"><a class="menu-item-link" href="about.html" id="about-link">
+                <span lang="tr">hakkımızda</span>
+                <span lang="en">about</span>
+            </a></li>
+            <li class="menu-item"><a class="menu-item-link" href="brands.html" id="brands-link">
+                <span lang="tr">markalar</span>
+                <span lang="en">brands</span>
+            </a></li>
+            <li class="menu-item"><a class="menu-item-link" href="contact.html" id="contact-link">
+                <span lang="tr">iletişim</span>
+                <span lang="en">contact</span>
+            </a></li>
+            <li class="menu-item" lang="tr"><a class="menu-item-link lang-change" href="#" id="english">english</a></li>
+            <li class="menu-item" lang="en"><a class="menu-item-link lang-change" href="#"  id="turkish">türkçe</a></li>
+        </ul>
+
+        <div id="toggle">
+            <a href="javascript:void(0);" onclick="onMenuIconClicked()" id="menu-icon">
+                <i class="fa fa-2x fab fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <main id="main">
+        <section id="home">
+            <div class="home-wrapper">
+                <div class="hero-images">
+                    <div class="hero-image-wrapper"><img class="hero-image" src="./images/hero-image-1.jpg" width="100%" alt=""></div>
+                    <div class="hero-image-wrapper"><img class="hero-image" src="./images/hero-image-2.jpg" width="100%" alt=""></div>
+                    <div class="hero-image-wrapper"><img class="hero-image" src="./images/hero-image-3.jpg" width="100%" alt=""></div>
+                </div>
+                <div class="spacer"></div>
+                <div class="home-info" lang="tr">
+                    <div class="placer-for-50-50-grid"></div>
+                    <div class="home-info-text">
+                        <h3 style="text-transform:uppercase;" lang="tr">Orijinal konseptler, tadına doyulmaz lezzetler...</h3>
+                        <p lang="tr">
+                            Türkiye’de yepyeni lezzet konseptlerinin yaratıcısı olarak bilinen Gazi ve Bilal Ateş, Chef Mezze ile başlayan yolculuklarına Chef Grup çatısı altında hız kesmeden devam ediyor. Chef Mezze ile geleneksel meyhane anlayışına modern bir yaklaşım getiren Chef Grup, ikinci adımı olan Chef Döner’le bir “sokak lezzeti” olan döneri artizan tatlarla bir araya getirerek bir ilke daha imza attı. Son olarak “Arnavutköy’de modern bir Girit meyhanesi” konseptiyle hayata geçirilen Chef Meyhane ile Türkiye’de meze ve meyhane denince ilk akla gelen isimlerden biri olduğunu kanıtlayan Chef Grup, yepyeni lezzet projeleriyle gastronomi dünyamızda çığır açmayı sürdürecek.
+                        </p>
+                        <h3 style="text-transform:uppercase;" lang="en">Lorem ipsum dolor sit amet.</h3>
+                        <p lang="en">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, excepturi. Expedita exercitationem aliquam at totam sit eaque id inventore. Odit nostrum necessitatibus architecto voluptates veniam tempora fugiat voluptas vitae suscipit.
+                        </p>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+            </div>
+        </section>
+        <section id="about" class="hidden">
+            <div class="about-wrapper">
+                <div class="team-image-wrapper">
+                    <img class="team-image" src="./images/team-image.png" alt="Chef Grup ekip resmi." width="100%">
+                </div>
+                <div class="team-info-wrapper">
+                    <div class="info info-1">
+                        <p lang="tr">
+                            Türk mutfağının çağdaş ustaları Gazi ve Bilal Ateş, geleneksel lezzetleri modern konseptlerle birleştirerek yenilikçi tatlar yaratıyor. Bu tat ve konseptler üzerine kurdukları mekanlarda iyi müzik, sağlam ambiyans ve tadı damakta kalan lezzet üçlemesini olmazsa olmaz olarak görüyorlar.
+                        </p>
+                        <p lang="en">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, doloremque distinctio earum eum aspernatur tenetur recusandae ex fugit sequi. Dolores cupiditate nisi nemo repellendus veniam id placeat incidunt excepturi quibusdam.
+                        </p>
+                    </div>
+                    <div class="info info-2">
+                        <p lang="tr">
+                            Dünyanın dört bir yanından farklı lezzet ve tarifleri geleneksel Türk mutfağı ile harmanlayarak modern ve bize özgü konseptler yaratan Gazi ve Bilal Ateş, Chef Grup çatısı altındaki markaları Chef Mezze, Chef Döner ve Chef Meyhane ile misafirlerine farklı gastronomik deneyimler sunuyor.
+                        </p>
+                        <p lang="en">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nam deleniti dignissimos a repellat quas libero rem? Sed a commodi quo id neque, minima, dignissimos officiis deserunt soluta fugit repudiandae?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="brands" class="hidden">
+            <div class="brands-wrapper">
+                <div class="brand">
+                    <div class="brand-image-wrapper">
+                        <img class="brand-image" src="./images/logo-chef-mezze.png" alt="">
+                    </div>
+                    <div class="brand-info">
+                        <p lang="tr">Gazi ve Bilal Ateş’in mutfağından çıkma, Türkiye’de modern meyhane kavramının öncüsü bir tecrübe: Chef Mezze. İyi müzik, iyi lezzet, iyi manzara. Bizim için önemli olan ise bunların birleşiminden çıkan anılar. Geleneksel lezzetlerin, dünyanın dört bir yanından özenle toplanan tariflerle birleşerek yepyeni tatlara dönüştüğü Chef Mezze, her duyuya hitap eden bu gastronomik deneyimi, İstanbul’un ve Mersin’in en güzel manzarası eşliğinde sunuyor.</p>
+                        <p lang="en">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident deleniti quidem adipisci esse nostrum delectus sit deserunt architecto harum cumque inventore quibusdam, repellat dolor voluptates, facilis veniam, voluptate nobis fuga.</p>
+                    </div>
+                </div>
+                <div class="brand">
+                    <div class="brand-image-wrapper">
+                        <img class="brand-image" src="./images/logo-chef-doner.png" alt="">
+                    </div>
+                    <div class="brand-info">
+                        <p lang="tr">Bazen bir lezzetin yeniden keşfedilmesi için ona çok farklı açılardan bakmak gerekir. İşin mutfağından gelen, meze kültürünü Türkiye’de yeniden tanımlamak için yola çıkan Gazi ve Bilal Ateş, “aynı şey neden dönere yapılamasın” diye sorduklarında, mutfaklarından çıkan cevap Chef Döner oldu. Güçlü lezzet reçeteleri ile dönerin klasik tadını bir araya getiren kardeşler, geleneksel bir lezzeti yeniden tanımlayarak, Chef Döner markasını oluşturdular.</p>
+                        <p lang="en">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident deleniti quidem adipisci esse nostrum delectus sit deserunt architecto harum cumque inventore quibusdam, repellat dolor voluptates, facilis veniam, voluptate nobis fuga.</p>
+                    </div>
+                </div>
+                <div class="brand">
+                    <div class="brand-image-wrapper">
+                        <img class="brand-image" src="./images/logo-chef-meyhane.png" alt="">
+                    </div>
+                    <div class="brand-info">
+                        <p lang="tr">Chef Meyhane, selefi Chef Mezze’nin “müzik, meze, manzara” anlayışını devam ettiriyor. Boğaz’ın incisi Arnavutköy sahilinde, İstanbul’un en güzel manzaralarından birine sahip olan mekanda özenle hazırlanmış birbirinden lezzetli mezeler, en taze deniz ürünleri ve çeşit çeşit rakı misafirleri bekliyor. Dünyanın en sağlıklı ve lezzetli mutfaklarından biri olan, tazelik ve mevsiminde ürün kullanımıyla bilinen Girit mutfağının ağırlıkta olduğu mekanda konsept olarak da Girit’den esinlenildi.</p>
+                        <p lang="en">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident deleniti quidem adipisci esse nostrum delectus sit deserunt architecto harum cumque inventore quibusdam, repellat dolor voluptates, facilis veniam, voluptate nobis fuga.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="hidden">
+            <div class="container">  
+                <form id="contact" action="" method="post">
+                    <p lang="tr">Franchising ile ilgili bilgi almak için aşağıdaki formu doldurunuz.</p>
+                    <p lang="en">Fill the following form to get information about Franchising.</p>
+                    <div class="spacer"></div>
+                    <div class="form-group">
+                        <label for="name-field" lang="tr" class="flex-2">Ad</label>
+                        <label for="name-field" lang="en" class="flex-2">Name</label>
+                        <input id="name-field" class="flex-4" type="text" tabindex="1" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname-field" lang="tr" class="flex-2">Soyad</label>
+                        <label for="surname-field" lang="en" class="flex-2">Surname</label>
+                        <input id="surname-field" class="flex-4" type="email" tabindex="2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-field" lang="tr" class="flex-2">Telefon</label>
+                        <label for="phone-field" lang="en" class="flex-2">Phone Number</label>
+                        <input id="phone-field" class="flex-4" type="tel" tabindex="3" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-field" lang="tr" class="flex-2">Email</label>
+                        <label for="email-field" lang="en" class="flex-2">Email</label>
+                        <input id="email-field" class="flex-4" type="url" tabindex="4" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-field" lang="tr" class="flex-2">Notunuz</label>
+                        <label for="message-field" lang="en" class="flex-2">Your Message</label>
+                        <textarea id="message-field" class="flex-4" tabindex="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button lang="tr" name="submit" type="submit" id="contact-submit" data-submit="...Sending">GÖNDER</button>
+                        <button lang="en" name="submit" type="submit" id="contact-submit" data-submit="...Sending">SEND</button>
+                    </div>
+                    <div class="spacer"></div>
+                    <p lang="tr">İletişim: 0530 067 50 40 | info@chefgrup.com</p>
+                    <p lang="en">Contact: 0530 067 50 40 | info@chefgrup.com</p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="copyright flex-2">
+            <p class="copyright-text" lang="tr"><strong>© Chef Grup, 2018</strong></p>
+            <p class="copyright-text" lang="en"><strong>© Chef Group, 2018</strong></p>
+        </div>
+        <ul id="social-links" class="flex-4">
+            <li class="social-link-item"><a href="#" class="social-link"><i class="fab fa-3x fa-facebook"></i></a></li>
+            <li class="social-link-item"><a href="#" class="social-link"><i class="fab fa-3x fa-instagram"></i></a></li>
+            <li class="social-link-item"><a href="#" class="social-link"><i class="fab fa-3x fa-twitter"></i></a></li>
+        </ul>
+        <div class="flex-2"></div>
+    </footer>
+    <div class="spacer"></div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
