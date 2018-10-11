@@ -11,16 +11,16 @@ body.tr p[lang=en],
 body.tr h3[lang=en],
 body.tr label[lang=en], 
 body.tr button[lang=en], 
-body.tr #menu span[lang=en],
-body.tr #menu li[lang=en] {
+body.tr nav span[lang=en],
+body.tr nav li[lang=en] {
     display: none;
 }
 body.en p[lang=tr],
 body.en h3[lang=tr],
 body.en label[lang=tr],
 body.en button[lang=tr], 
-body.en #menu span[lang=tr],
-body.en #menu li[lang=tr] {
+body.en nav span[lang=tr],
+body.en nav li[lang=tr] {
     display: none;
 }
 
@@ -136,10 +136,6 @@ p {
 
 .hidden {
     display: none;
-}
-
-.visuallyhidden {
-    opacity: 0;
 }
 
 .hero-image-wrapper {
