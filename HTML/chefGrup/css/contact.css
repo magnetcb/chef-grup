@@ -1,9 +1,11 @@
-.container {
+.contact-wrapper {
 	width: 60%;
+	height: 100%;
 	margin: auto;
-	margin-top: 5%;
-	position: relative;
 	background-color: #e1e1e1;
+	display: flex;
+	flex-direction: column;
+	padding-top: 25px;
 }
 
 #contact {
@@ -44,14 +46,18 @@ label {
 .flex-4 {flex: 4;}
 .flex-6 {flex: 6;}
 
-@media only screen and (max-width: 768px) {
-	.container {
+@media only screen and (max-width: 1024px) {
+	.contact-wrapper {
 		width: 100%;
 	}
 
 	.form-group {
 		display: flex;
 		flex-direction: column;
+	}
+
+	#contact p {
+		font-size: 1em;
 	}
 }
 

@@ -1,3 +1,7 @@
+function onMenuIconClicked() {
+    console.log("Menu item clicked.");
+}
+
 // Change site language
 var changeToEnglish = document.getElementById('english');
 changeToEnglish.addEventListener('click', function() {

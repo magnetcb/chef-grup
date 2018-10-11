@@ -14,7 +14,7 @@
 <body class="tr">
     <nav id="navbar">
         <div id="logo">
-            <a href="index.html" id="home-link"> <img src="./images/logo.png" alt="Chef Grup logo" width="120"></a>
+            <a href="index.html" id="home-link"> <img id="logo-image" src="./images/logo.png" alt="Chef Grup logo"></a>
         </div>
 
         <ul id="menu">
@@ -41,49 +41,47 @@
         </div>
     </nav>
     <div class="spacer"></div>
-    <main id="main">
-        <section id="contact">
-            <div class="container">  
-                <form id="contact" action="" method="post">
-                    <p lang="tr">Franchising ile ilgili bilgi almak için aşağıdaki formu doldurunuz.</p>
-                    <p lang="en">Fill the following form to get information about Franchising.</p>
-                    <div class="spacer"></div>
-                    <div class="form-group">
-                        <label for="name-field" lang="tr" class="flex-2">Ad</label>
-                        <label for="name-field" lang="en" class="flex-2">Name</label>
-                        <input id="name-field" class="flex-4" type="text" tabindex="1" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label for="surname-field" lang="tr" class="flex-2">Soyad</label>
-                        <label for="surname-field" lang="en" class="flex-2">Surname</label>
-                        <input id="surname-field" class="flex-4" type="email" tabindex="2" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone-field" lang="tr" class="flex-2">Telefon</label>
-                        <label for="phone-field" lang="en" class="flex-2">Phone Number</label>
-                        <input id="phone-field" class="flex-4" type="tel" tabindex="3" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email-field" lang="tr" class="flex-2">Email</label>
-                        <label for="email-field" lang="en" class="flex-2">Email</label>
-                        <input id="email-field" class="flex-4" type="url" tabindex="4" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message-field" lang="tr" class="flex-2">Notunuz</label>
-                        <label for="message-field" lang="en" class="flex-2">Your Message</label>
-                        <textarea id="message-field" class="flex-4" tabindex="5" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button lang="tr" name="submit" type="submit" id="contact-submit" data-submit="...Sending">GÖNDER</button>
-                        <button lang="en" name="submit" type="submit" id="contact-submit" data-submit="...Sending">SEND</button>
-                    </div>
-                    <div class="spacer"></div>
-                    <p lang="tr">İletişim: 0530 067 50 40 | info@chefgrup.com</p>
-                    <p lang="en">Contact: 0530 067 50 40 | info@chefgrup.com</p>
-                </form>
-            </div>
-        </section>
-    </main>
+    <section id="contact">
+        <div class="contact-wrapper">  
+            <form id="contact" action="" method="post">
+                <p lang="tr">Franchising ile ilgili bilgi almak için aşağıdaki formu doldurunuz.</p>
+                <p lang="en">Fill the following form to get information about Franchising.</p>
+                <div class="spacer"></div>
+                <div class="form-group">
+                    <label for="name-field" lang="tr" class="flex-2">Ad</label>
+                    <label for="name-field" lang="en" class="flex-2">Name</label>
+                    <input id="name-field" class="flex-4" type="text" tabindex="1" required autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="surname-field" lang="tr" class="flex-2">Soyad</label>
+                    <label for="surname-field" lang="en" class="flex-2">Surname</label>
+                    <input id="surname-field" class="flex-4" type="email" tabindex="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-field" lang="tr" class="flex-2">Telefon</label>
+                    <label for="phone-field" lang="en" class="flex-2">Phone Number</label>
+                    <input id="phone-field" class="flex-4" type="tel" tabindex="3" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-field" lang="tr" class="flex-2">Email</label>
+                    <label for="email-field" lang="en" class="flex-2">Email</label>
+                    <input id="email-field" class="flex-4" type="url" tabindex="4" required>
+                </div>
+                <div class="form-group">
+                    <label for="message-field" lang="tr" class="flex-2">Notunuz</label>
+                    <label for="message-field" lang="en" class="flex-2">Your Message</label>
+                    <textarea id="message-field" class="flex-4" tabindex="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button lang="tr" name="submit" type="submit" id="contact-submit" data-submit="...Sending">GÖNDER</button>
+                    <button lang="en" name="submit" type="submit" id="contact-submit" data-submit="...Sending">SEND</button>
+                </div>
+                <div class="spacer"></div>
+                <p lang="tr">İletişim: 0530 067 50 40 | info@chefgrup.com</p>
+                <p lang="en">Contact: 0530 067 50 40 | info@chefgrup.com</p>
+            </form>
+        </div>
+    </section>
     <div class="spacer"></div>
     <footer id="footer">
         <div class="copyright flex-2">
@@ -91,9 +89,9 @@
             <p class="copyright-text" lang="en"><strong>© Chef Group, 2018</strong></p>
         </div>
         <ul id="social-links" class="flex-4">
-            <li class="social-link-item"><a href="#" class="social-link"><img class="social-link-image" src="./icons/facebook-brands.svg" alt="Chef Grup Facebook" width="30"></a></li>
-            <li class="social-link-item"><a href="#" class="social-link"><img class="social-link-image" src="./icons/instagram-brands.svg" alt="Chef Grup Instagram" width="30"></a></li>
-            <li class="social-link-item"><a href="#" class="social-link"><img class="social-link-image" src="./icons/twitter-square-brands.svg" alt="Chef Grup Twitter" width="30"></a></li>
+            <li class="social-link-item"><a href="#" class="social-link"><i class="fab fa-2x fa-facebook"></i></a></li>
+            <li class="social-link-item"><a href="#" class="social-link"><i class="fab fa-2x fa-instagram"></i></a></li>
+            <li class="social-link-item"><a href="#" class="social-link"><i class="fab fa-2x fa-twitter"></i></a></li>
         </ul>
         <div class="flex-2"></div>
     </footer>
