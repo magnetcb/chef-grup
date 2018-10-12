@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/nav2.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css"/>
 </head>
 <body class="tr">
     <nav class="clearfix">
@@ -89,6 +91,20 @@
                 <div class="hero-image-wrapper">
                     <img class="hero-image" src="./images/hero-image-3.jpg" width="80%" alt="">
                     <img class="hero-image-shadow" src="./images/rect.png" width="80%" alt="">
+                </div>
+            </div>
+            <div class="hero-images-mobile">
+                <div class="hero-image-wrapper">
+                    <img class="hero-image" src="./images/hero-image-1.jpg" width="90%" alt="">
+                    <img class="hero-image-shadow" src="./images/rect.png" width="90%" alt="">
+                </div>
+                <div class="hero-image-wrapper">
+                    <img class="hero-image" src="./images/hero-image-2.jpg" width="90%" alt="">
+                    <img class="hero-image-shadow" src="./images/rect.png" width="90%" alt="">
+                </div>
+                <div class="hero-image-wrapper">
+                    <img class="hero-image" src="./images/hero-image-3.jpg" width="90%" alt="">
+                    <img class="hero-image-shadow" src="./images/rect.png" width="90%" alt="">
                 </div>
             </div>
             <div class="spacer"></div>
@@ -218,6 +234,16 @@
         <div class="flex-2"></div>
     </footer>
     <div class="spacer"></div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.hero-images-mobile').slick();
+        });
+    </script>
 </body>
 </html>
