@@ -378,9 +378,9 @@ section {
 
 @media only screen and (max-width: 1024px) {
     body {
-        background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(20%), transparent 0);
-        background-image: -o-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(20%), transparent 0);
-        background-image: linear-gradient(140deg, rgba(255, 255, 255, 01) calc(20%), transparent 0);
+        background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(25%), transparent 0);
+        background-image: -o-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(25%), transparent 0);
+        background-image: linear-gradient(140deg, rgba(255, 255, 255, 01) calc(25%), transparent 0);
         font-size: 1em;
     }
 
@@ -436,7 +436,7 @@ section {
 
     .info-1 {
         margin-top: 0px;
-        padding-top: 25px;
+        padding-top: 20px;
         padding-right: 0;
     }
     
@@ -444,7 +444,7 @@ section {
         padding-right: 0;
         padding-left: 0;
         margin-top: 0px;
-        padding-top: 25px;
+        padding-top: 0px;
         text-align: left;
         color: #ffffff;
     }
@@ -457,17 +457,22 @@ section {
         width: 100%;
     }
 
+    .hero-image-wrapper {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
     .hero-images {
         padding-top: 50px;
-        display: none !important;
+        display: flex;
+        flex-direction: column;
     }
 
-    .hero-images-mobile {
-        display: block !important;
-    }
-
-    .hero-image-wrapper {
-        height: 300px !important;
+    .hero-image-shadow {
+        position: absolute;
+        top: -10px;
+        left: -2%;
+        z-index: -1;
     }
 
     .social-link {
@@ -524,7 +529,7 @@ section {
 
     .info-1 {
         margin-top: 0px;
-        padding-top: 25px;
+        padding-top: 20px;
         padding-right: 0;
     }
     
@@ -532,17 +537,26 @@ section {
         padding-right: 0;
         padding-left: 0;
         margin-top: 0px;
-        padding-top: 25px;
+        padding-top: 0px;
         text-align: left;
         color: #ffffff;
+    }
+
+    .brand {
+        margin-bottom: 60px;
+    }
+
+    .brand-image {
+        width: 40%;
+        margin-top: -10%;
     }
 }
 
 @media only screen and (max-width: 500px) {
     body {
-        background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(15%), transparent 0);
-        background-image: -o-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(15%), transparent 0);
-        background-image: linear-gradient(140deg, rgba(255, 255, 255, 01) calc(15%), transparent 0);
+        background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(20%), transparent 0);
+        background-image: -o-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(20%), transparent 0);
+        background-image: linear-gradient(140deg, rgba(255, 255, 255, 01) calc(20%), transparent 0);
     }
 
     .hero-images {

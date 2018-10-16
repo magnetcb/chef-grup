@@ -111,6 +111,7 @@ nav ul li a {
             cursor: pointer;
             z-index: 9999;
             border-radius: 50%;
+            background-color: #262262;
       }
 
       .nav-btn i {
@@ -141,7 +142,6 @@ nav ul li a {
 }
 
 #nav:checked + .nav-btn i {
-      background: #000;
       transition: transform 0.2s ease;
 }
 
