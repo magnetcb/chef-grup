@@ -25,15 +25,16 @@ a {
 .label-text {
     color: white;
     padding: 1em;
+    font-size: 1.2em;
     background-color: #00abbe;
 }
 
 .label-text-left {
-    padding-left: 5%;
+    padding-left: 7%;
 }
 
 .label-text-right {
-    padding-right: 5%;
+    padding-right: 7%;
 }
 
 .label-right {
@@ -252,6 +253,7 @@ nav ul li:last-child .navbar-link {
 }
 
 #gallery {
+    margin-top: 5%;
     text-align: center;
 }
 
