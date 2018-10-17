@@ -43,10 +43,6 @@ nav ul li a {
             padding: 1em;
       }
 
-      .lang-change {
-            color: white;
-      }
-
       .nav-wrapper {
             position: fixed;
             top: 0;
@@ -103,6 +99,10 @@ nav ul li a {
             letter-spacing: 1.2px;
             transform: translateX(-20px);
             transition: all 0.2s ease;
+      }
+
+      .nav-wrapper ul li .lang-change {
+            color: white;
       }
 
       .nav-btn {
