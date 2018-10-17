@@ -56,7 +56,6 @@ p {
     line-height: 1.5;
 }
 
-#navbar, 
 #menu,
 #social-links,
 .hero-images,
@@ -71,13 +70,6 @@ p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-}
-
-#navbar {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    margin-top: 68px;
 }
 
 .about-wrapper {
@@ -111,6 +103,7 @@ p {
     background-color: #565383;
     border-radius: 5px;
     padding: 1em;
+    margin-right: 10px;
 }
 
 #footer {
@@ -249,6 +242,7 @@ p {
 }
 
 .info {
+    font-size: 0.9em;
     color: white;
 }
 
@@ -379,6 +373,15 @@ section {
         padding-left: 0;
         padding-right: 50%;
         color: #ffffff;
+    }
+}
+
+@media only screen and (max-width: 1248px) {
+    body {
+        background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(35% - 10%), transparent 0), -webkit-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
+        background-image: -o-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(35% - 10%), transparent 0), -o-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
+        background-image: linear-gradient(140deg, rgba(255, 255, 255, 01) calc(35% - 10%), transparent 0), linear-gradient(-40deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
+        font-size: 1em;
     }
 }
 

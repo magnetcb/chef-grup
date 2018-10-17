@@ -43,6 +43,10 @@ nav ul li a {
             padding: 1em;
       }
 
+      .lang-change {
+            color: white;
+      }
+
       .nav-wrapper {
             position: fixed;
             top: 0;
