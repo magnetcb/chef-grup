@@ -273,6 +273,13 @@ nav ul li:last-child .navbar-link {
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .google-maps-widget,
 .contact-info {
     flex: 3;
