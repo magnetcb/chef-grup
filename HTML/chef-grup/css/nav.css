@@ -33,6 +33,16 @@ nav ul li a {
       text-decoration: none;
 }
 
+#logo-image {
+      height: 35px;
+}
+
+.lang-change {
+      background-color: #565383;
+      border-radius: 5px;
+      padding: 1em;
+      margin-right: 10px;
+}
 
 .clearfix {
       overflow: auto;
@@ -52,13 +62,17 @@ nav ul li a {
             z-index: -1;
             background: #fff;
             opacity: 0;
+            -webkit-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
             transition: all 0.2s ease;
       }
 
       .nav-wrapper ul {
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
             width: 100%;
       }
 
@@ -71,19 +85,27 @@ nav ul li a {
       }
 
       .nav-wrapper ul li:nth-child(1) a {
-            transition-delay: 0.2s;
+            -webkit-transition-delay: 0.2s;
+                 -o-transition-delay: 0.2s;
+                    transition-delay: 0.2s;
       }
 
       .nav-wrapper ul li:nth-child(2) a {
-            transition-delay: 0.3s;
+            -webkit-transition-delay: 0.3s;
+                 -o-transition-delay: 0.3s;
+                    transition-delay: 0.3s;
       }
 
       .nav-wrapper ul li:nth-child(3) a {
-            transition-delay: 0.4s;
+            -webkit-transition-delay: 0.4s;
+                 -o-transition-delay: 0.4s;
+                    transition-delay: 0.4s;
       }
 
       .nav-wrapper ul li:nth-child(4) a {
-            transition-delay: 0.5s;
+            -webkit-transition-delay: 0.5s;
+                 -o-transition-delay: 0.5s;
+                    transition-delay: 0.5s;
       }
 
       .nav-wrapper ul li:not(:first-child) {
@@ -97,7 +119,11 @@ nav ul li a {
             font-size: 14px;
             font-weight: 600;
             letter-spacing: 1.2px;
-            transform: translateX(-20px);
+            -webkit-transform: translateX(-20px);
+                -ms-transform: translateX(-20px);
+                    transform: translateX(-20px);
+            -webkit-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
             transition: all 0.2s ease;
       }
 
@@ -139,18 +165,30 @@ nav ul li a {
       .nav-btn i:nth-child(3) {
             margin-top: 4px;
       }
+
+      #logo-image {
+            height: 25px;
+      }
 }
 
 #nav:checked + .nav-btn {
-      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
 }
 
 #nav:checked + .nav-btn i {
+      -webkit-transition: -webkit-transform 0.2s ease;
+      transition: -webkit-transform 0.2s ease;
+      -o-transition: transform 0.2s ease;
       transition: transform 0.2s ease;
+      transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 #nav:checked + .nav-btn i:nth-child(1) {
-      transform: translateY(6px) rotate(180deg);
+      -webkit-transform: translateY(6px) rotate(180deg);
+          -ms-transform: translateY(6px) rotate(180deg);
+              transform: translateY(6px) rotate(180deg);
 }
 
 #nav:checked + .nav-btn i:nth-child(2) {
@@ -158,7 +196,9 @@ nav ul li a {
 }
 
 #nav:checked + .nav-btn i:nth-child(3) {
-      transform: translateY(-6px) rotate(90deg);
+      -webkit-transform: translateY(-6px) rotate(90deg);
+          -ms-transform: translateY(-6px) rotate(90deg);
+              transform: translateY(-6px) rotate(90deg);
 }
 
 #nav:checked ~ .nav-wrapper {
@@ -168,5 +208,7 @@ nav ul li a {
 
 #nav:checked ~ .nav-wrapper ul li a {
       opacity: 1;
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0);
 }
