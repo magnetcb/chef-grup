@@ -11,6 +11,12 @@ body {
     font-size: 1em;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 0.8em;
+    }
+}
+
 ul {
     list-style: none;
 }
@@ -152,6 +158,7 @@ button.carousel__button {
     background: rgba(0,0,0,0);
     border: none;
     color: #fff;
+    cursor: pointer;
 }
 
 .headline-item {
@@ -166,15 +173,20 @@ button.carousel__button {
     padding: 1% 0%;
 }
 
-@media screen and (max-width: 768px) {
-    .title {
-        font-size: 1em;
-    }
-}
-
 .subtitle {
     margin: 50px 10%;
     font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        padding: 3% 0%;
+        font-size: 1em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
 }
 
 /* MAIN */
@@ -187,12 +199,12 @@ button.carousel__button {
 }
 
 #concept-first {
-    flex: 2;
+    width: 40%;
     margin: 1em;
 }
 
 #concept-second {
-    flex: 2;
+    width: 60%;
     margin: 1em;
     display: flex;
     flex-direction: column;
@@ -205,6 +217,7 @@ button.carousel__button {
 
 .concept-image-container {
     text-align: center;
+    width: 100%;
 }
 
 .concept-image {
