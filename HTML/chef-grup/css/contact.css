@@ -1,6 +1,12 @@
+#contact {
+	margin: auto;
+	width: 75%;
+	padding: 1em;
+	text-align: center;
+}
+
 .contact-wrapper {
 	width: 60%;
-	height: 100%;
 	margin: auto;
 	background-color: #e1e1e1;
 	display: -webkit-box;
@@ -11,13 +17,6 @@
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	padding-top: 25px;
-}
-
-#contact {
-	margin: auto;
-	width: 75%;
-	padding: 25px 0;
-	text-align: center;
 }
 
 #contact p {
