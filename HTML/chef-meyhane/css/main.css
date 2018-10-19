@@ -8,6 +8,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 1.5;
+    font-size: 1em;
 }
 
 ul {
@@ -86,8 +87,13 @@ nav ul li:last-child .navbar-link {
 }
 
 @media screen and (max-width: 768px) {
+    nav {
+        padding: 0;
+        align-items: center;
+    }
+
     .logo-image {
-        width: 50%;
+        width: 40%;
     }
 
     .navbar {
@@ -121,6 +127,7 @@ nav ul li:last-child .navbar-link {
     height: auto;
     position: relative;
     display: inline-block;
+    margin-bottom: -10px;
 }
 
 .carousel__prev, .carousel__next {
@@ -159,6 +166,12 @@ button.carousel__button {
     padding: 1% 0%;
 }
 
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1em;
+    }
+}
+
 .subtitle {
     margin: 50px 10%;
     font-size: 1.2em;
@@ -166,7 +179,6 @@ button.carousel__button {
 
 /* MAIN */
 /* Concept Section */
-
 .concept-wrapper {
     margin: auto;
     width: 90%;
@@ -354,6 +366,10 @@ button.carousel__button {
 
 .contact-info p {
     margin: 1em;
+}
+
+.social-links {
+    text-align: center;
 }
 
 .social-link {
