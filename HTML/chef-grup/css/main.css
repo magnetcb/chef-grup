@@ -147,6 +147,7 @@ body.en nav li[lang=tr] {
 
 /* Section - ABOUT CSS */
 .about-wrapper {
+    height: 700px;
     margin: auto;
     padding-top: 25px;
     display: -webkit-box;

@@ -53,7 +53,11 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 2em;
+    padding: 1em;
+}
+
+.toggle {
+    display: none;
 }
 
 nav ul li:last-child .navbar-link {
@@ -62,6 +66,10 @@ nav ul li:last-child .navbar-link {
 
 .logo {
     margin: 1em;
+}
+
+.logo-image {
+    width: 75%;
 }
 
 .navbar-item {
@@ -77,11 +85,66 @@ nav ul li:last-child .navbar-link {
     font-weight: 600;
 }
 
-/* Header, Slider, Headlines */
+@media screen and (max-width: 768px) {
+    .logo-image {
+        width: 50%;
+    }
 
-.slider-image {
-    display: block;
+    .navbar {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+        cursor: pointer;
+        margin: 1em;
+        color: #00abbe;
+    }
+}
+
+/* Header, Slider, Headlines */
+.carousel__frame {
     width: 100%;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel__slides {
+    display: block;
+}
+
+.carousel__item {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+}
+
+.carousel__prev, .carousel__next {
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+}
+
+.carousel__prev {
+    left: 2rem;
+}
+
+.carousel__next {
+    right: 2rem;
+}
+
+button.carousel__button:focus {
+    outline: none;
+}
+
+button.carousel__button {
+    background: rgba(0,0,0,0);
+    border: none;
+    color: #fff;
 }
 
 .headline-item {
