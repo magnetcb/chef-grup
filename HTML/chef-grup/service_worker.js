@@ -1,7 +1,6 @@
 importScripts('./js/cache-polyfill.js');
 
 self.addEventListener('install', function(e) {
-    console.log('Attempting to install service worker and cache static assets');
     e.waitUntil(
         caches.open('chefgrup').then(function(cache) {
             return cache.addAll([
@@ -30,7 +29,6 @@ self.addEventListener('install', function(e) {
 });
 
 self.addEventListener('fetch', function(event) {
-    console.log(event.request.url);
     event.respondWith(
         caches.match(event.request).then(function(response) {
             return response || fetch(event.request);
