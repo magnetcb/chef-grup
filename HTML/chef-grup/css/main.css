@@ -473,7 +473,8 @@ body.en nav li[lang=tr] {
     }
 
     .team-images .team-image-wrapper:last-child .team-image {
-        margin: 5% 0%;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 
     /* Section - BRANDS CSS */
