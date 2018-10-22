@@ -315,12 +315,15 @@ body.en nav li[lang=tr] {
 
 @media only screen and (max-width: 2060px) {
     body {
-        background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), -webkit-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(55% - 16%), transparent 0);
-        background-image: -o-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), -o-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(55% - 16%), transparent 0);
-        background-image: linear-gradient(140deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), linear-gradient(-40deg, rgba(255, 255, 255, 01) calc(55% - 16%), transparent 0);
+        background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), -webkit-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(53% - 15%), transparent 0);
+        background-image: -o-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), -o-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(53% - 15%), transparent 0);
+        background-image: linear-gradient(140deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), linear-gradient(-40deg, rgba(255, 255, 255, 01) calc(53% - 15%), transparent 0);
         font-size: 1em;
     }
 
+    .info {
+        width: 40%;
+    }
 }
 
 @media only screen and (max-width: 1600px) {
