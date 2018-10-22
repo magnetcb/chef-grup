@@ -184,7 +184,7 @@ body.en nav li[lang=tr] {
 }
 
 .team-images .team-image-wrapper:last-child .team-image {
-    margin-top: 100px;
+    margin-top: 25%;
 }
 
 .team-info-wrapper {
@@ -286,9 +286,9 @@ body.en nav li[lang=tr] {
 
 @media only screen and (min-width: 2060px) {
     body {
-        background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 250px), transparent 0), -webkit-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
-        background-image: -o-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 250px), transparent 0), -o-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
-        background-image: linear-gradient(140deg, rgba(255, 255, 255, 01) calc(50% - 250px), transparent 0), linear-gradient(-40deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
+        background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), -webkit-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
+        background-image: -o-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), -o-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
+        background-image: linear-gradient(140deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), linear-gradient(-40deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
         font-size: 1.3em;
     }
 
@@ -308,16 +308,16 @@ body.en nav li[lang=tr] {
     }
 
     .team-image {
-        -webkit-box-shadow: -100px -100px #f4f0f0;
-                box-shadow: -100px -100px #f4f0f0;
+        -webkit-box-shadow: -70px -70px #f4f0f0;
+                box-shadow: -70px -70px #f4f0f0;
     }
 }
 
 @media only screen and (max-width: 2060px) {
     body {
-        background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 10%), transparent 0), -webkit-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(55% - 16%), transparent 0);
-        background-image: -o-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 10%), transparent 0), -o-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(55% - 16%), transparent 0);
-        background-image: linear-gradient(140deg, rgba(255, 255, 255, 01) calc(50% - 10%), transparent 0), linear-gradient(-40deg, rgba(255, 255, 255, 01) calc(55% - 16%), transparent 0);
+        background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), -webkit-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(55% - 16%), transparent 0);
+        background-image: -o-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), -o-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(55% - 16%), transparent 0);
+        background-image: linear-gradient(140deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), linear-gradient(-40deg, rgba(255, 255, 255, 01) calc(55% - 16%), transparent 0);
         font-size: 1em;
     }
 
@@ -325,9 +325,9 @@ body.en nav li[lang=tr] {
 
 @media only screen and (max-width: 1600px) {
     body {
-        background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(40% - 10%), transparent 0), -webkit-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
-        background-image: -o-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(40% - 10%), transparent 0), -o-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
-        background-image: linear-gradient(140deg, rgba(255, 255, 255, 01) calc(40% - 10%), transparent 0), linear-gradient(-40deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
+        background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), -webkit-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
+        background-image: -o-linear-gradient(310deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), -o-linear-gradient(130deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
+        background-image: linear-gradient(140deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0), linear-gradient(-40deg, rgba(255, 255, 255, 01) calc(50% - 15%), transparent 0);
         font-size: 1em;
     }
 
