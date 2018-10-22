@@ -4,7 +4,7 @@ self.addEventListener('install', function(e) {
     e.waitUntil(
         caches.open('chefgrup').then(function(cache) {
             return cache.addAll([
-                '',
+                '.',
                 'index.html',
                 'about.html',
                 'brands.html',
@@ -29,7 +29,7 @@ self.addEventListener('install', function(e) {
 });
 
 self.addEventListener('fetch', function(event) {
-    console.log(event.request.url);
+    console.log("Service Worker: Fetching...");
     event.respondWith(
         caches.match(event.request).then(function(response) {
             return response || fetch(event.request);

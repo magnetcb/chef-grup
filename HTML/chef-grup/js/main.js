@@ -12,9 +12,9 @@ changeToTurkish.addEventListener('click', function() {
 /* Register Service Worker */
 if('serviceWorker' in navigator) {
     navigator.serviceWorker
-        .register('service_worker.js')
+        .register('./service-worker.js')
         .then(function(registration) { 
-            console.log("Service Worker Registered", registration);
+            console.log("Service Worker Registered");
         })
         .catch(function(err) {
             console.log(err);
