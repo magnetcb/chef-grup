@@ -1,0 +1,37 @@
+[23-Oct-2018 10:46:20 Europe/Moscow] PHP Warning:  mail() has been disabled for security reasons in /home/u8291248/public_html/contact.php on line 13
+[23-Oct-2018 10:58:54 Europe/Moscow] PHP Warning:  mail() has been disabled for security reasons in /home/u8291248/public_html/contact.php on line 13
+[23-Oct-2018 11:03:16 Europe/Moscow] PHP Warning:  mail() has been disabled for security reasons in /home/u8291248/public_html/contact.php on line 13
+[23-Oct-2018 11:04:46 Europe/Moscow] PHP Warning:  mail() has been disabled for security reasons in /home/u8291248/public_html/contact.php on line 13
+[23-Oct-2018 11:06:45 Europe/Moscow] PHP Warning:  mail() has been disabled for security reasons in /home/u8291248/public_html/contact.php on line 14
+[23-Oct-2018 11:31:54 Europe/Moscow] PHP Warning:  mail() has been disabled for security reasons in /home/u8291248/public_html/contact.php on line 14
+[23-Oct-2018 11:32:21 Europe/Moscow] PHP Warning:  mail() has been disabled for security reasons in /home/u8291248/public_html/contact.php on line 14
+[23-Oct-2018 11:33:19 Europe/Moscow] PHP Warning:  mail() has been disabled for security reasons in /home/u8291248/public_html/contact.php on line 14
+[24-Oct-2018 13:49:34 Europe/Moscow] PHP Warning:  mail() has been disabled for security reasons in /home/u8291248/public_html/mailer.php on line 35
+[24-Oct-2018 13:51:35 Europe/Moscow] PHP Warning:  mail() has been disabled for security reasons in /home/u8291248/public_html/mailer.php on line 37
+[24-Oct-2018 14:03:12 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1201
+[24-Oct-2018 14:03:12 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 14:03:54 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 14:12:26 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 14:17:46 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 14:20:17 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1201
+[24-Oct-2018 14:20:17 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 14:20:26 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1201
+[24-Oct-2018 14:20:26 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 14:21:06 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 14:39:13 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 14:51:35 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1201
+[24-Oct-2018 14:51:35 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 14:52:43 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1201
+[24-Oct-2018 14:52:43 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 14:53:12 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1201
+[24-Oct-2018 14:53:12 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 14:58:03 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1201
+[24-Oct-2018 14:58:03 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 15:01:38 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1201
+[24-Oct-2018 15:01:38 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 15:01:46 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1201
+[24-Oct-2018 15:01:46 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 15:04:50 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1201
+[24-Oct-2018 15:04:50 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
+[24-Oct-2018 15:06:03 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1201
+[24-Oct-2018 15:06:03 Europe/Moscow] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/u8291248/public_html/mailphp/class.phpmailer.php on line 1209
