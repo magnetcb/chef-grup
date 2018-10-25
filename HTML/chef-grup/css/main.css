@@ -236,6 +236,8 @@ body.en nav li[lang=tr] {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    display: block;
+    cursor: pointer;
 }
 
 .brand-image {
