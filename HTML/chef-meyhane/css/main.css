@@ -58,7 +58,7 @@ a {
 
 /* Navigation */
 
-nav {
+.nav-wrapper {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -67,11 +67,16 @@ nav {
     padding: 1em;
 }
 
-.toggle {
+#toggle {
     display: none;
 }
 
-nav ul li:last-child .navbar-link {
+.hidden {
+    display: none;
+}
+
+.nav-wrapper ul li:last-child .navbar-link,
+ul#mobile-navbar li:last-child .navbar-link {
     color: black;
 }
 
@@ -88,13 +93,24 @@ nav ul li:last-child .navbar-link {
     display: inline-block;
 }
 
+#mobile-navbar {
+    width: 100%;
+    display: none;
+    padding: 1em;
+}
+
+#mobile-navbar .mobile-navbar-item {
+    text-align: center;
+    padding: 0.5em;
+}
+
 .navbar-link {
     color: #00abbe;
     font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {
-    nav {
+    .nav-wrapper {
         padding: 0;
         align-items: center;
     }
@@ -107,10 +123,11 @@ nav ul li:last-child .navbar-link {
         display: none;
     }
 
-    .toggle {
+    #toggle {
         display: block;
         cursor: pointer;
         margin: 1em;
+        margin-right: 5%;
         color: #00abbe;
     }
 }
@@ -241,6 +258,7 @@ button.carousel__button {
 @media screen and (max-width: 1000px) {
     .concept-info-text {
         font-size: 1em;
+        line-height: 1.5em;
     }
 }
 
@@ -413,6 +431,7 @@ button.carousel__button {
 .reservation-info {
     text-align: center;
     color: #00abbe;
+    margin: 5% 0%;
 }
 
 /* About Section */
@@ -428,6 +447,10 @@ button.carousel__button {
 @media screen and (max-width: 768px) {
     .brand-logos {
         width: 90%;
+    }
+
+    .reservation-info {
+        margin: 10% 0%;
     }
 }
 
@@ -460,6 +483,12 @@ button.carousel__button {
     margin: auto;
     padding: 1em;
     width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+    .brand-info {
+        text-align: left;
+    }
 }
 
 a.brand-link,
