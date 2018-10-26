@@ -170,24 +170,24 @@ button.carousel__button {
     background-color: #00abbe;
     color: white;
     font-family: 'Kaushan Script', cursive;
-    padding: 1% 0%;
+    padding: 5% 0%;
     font-weight: 400;
     letter-spacing: 0.15em;
     font-size: 2.5em;
 }
 
 .subtitle {
-    margin: 50px 10%;
+    margin: 25px 10%;
 }
 
 @media screen and (max-width: 768px) {
     .title {
-        padding: 3% 0%;
-        font-size: 1em;
+        font-size: 1.25em;
     }
 
     .subtitle {
         font-size: 1em;
+        text-align: left;
     }
 }
 
@@ -307,6 +307,12 @@ button.carousel__button {
     min-width: 300px;
     padding: 1em;
     font-size: 0.75em;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-item  {
+        font-size: 1em;
+    }
 }
 
 #fix-menu-info {
