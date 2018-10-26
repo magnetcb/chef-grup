@@ -7,8 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Macondo|Montserrat:300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300,400,500,600" rel="stylesheet">
     <script src="./js/lory.min.js"></script>
+
+    <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16" />
+    <meta name="theme-color" content="#00abbe">
 </head>
 <body>
     <nav>
@@ -47,8 +51,8 @@
             </figure>
         </div>
         <div id="headlines">
-            <div class="headline-item title"><h1>Arnavutköy’de bir Girit meyhanesi</h1></div>
-            <div class="headline-item subtitle"><p>Türkiye’de modern meyhane kavramının öncüsü Gazi Ateş’in yarattığı en yeni konsept olan Chef Meyhane, selefi Chef Mezze’nin “müzik, meze, manzara” anlayışını devam ettiriyor. Boğaz’ın incisi Arnavutköy sahilinde, İstanbul’un en güzel manzaralarından birine sahip olan mekanda özenle hazırlanmış birbirinden lezzetli mezeler, en taze deniz ürünleri ve çeşit çeşit rakı misafirleri bekliyor.</p></div>
+            <div class="headline-item"><h1 class="title">Arnavutköy’de bir Girit meyhanesi</h1></div>
+            <div class="headline-item"><p class="subtitle">Türkiye’de modern meyhane kavramının öncüsü Gazi Ateş’in yarattığı en yeni konsept olan Chef Meyhane, selefi Chef Mezze’nin “müzik, meze, manzara” anlayışını devam ettiriyor. Boğaz’ın incisi Arnavutköy sahilinde, İstanbul’un en güzel manzaralarından birine sahip olan mekanda özenle hazırlanmış birbirinden lezzetli mezeler, en taze deniz ürünleri ve çeşit çeşit rakı misafirleri bekliyor.</p></div>
         </div>
     </header>
     <main>
@@ -70,15 +74,14 @@
                 <h1 class="menu-heading">ALAKART MENÜ</h1>
                 <div class="menu-tab-header">
                     <ul class="menu-tab-navigation">
-                        <li class="menu-tab-navigation-item"><a href="#Chef-mezzeler">Chef mezzeler</a></li>
-                        <li class="menu-tab-navigation-item"><a href="#Otlu-mezzeler">Otlu mezzeler</a></li>
-                        <li class="menu-tab-navigation-item"><a href="#Denizden-mezzeler">Denizden mezzeler</a></li>
-                        <li class="menu-tab-navigation-item"><a href="#Salatalar">Salatalar</a></li>
-                        <li class="menu-tab-navigation-item"><a href="#Ara-sicaklar">Ara sicaklar</a></li>
-                        <li class="menu-tab-navigation-item"><a href="#Sakatatlar">Sakatatlar</a></li>
-                        <li class="menu-tab-navigation-item"><a href="#Ana-yemekler">Ana yemekler</a></li>
-                        <li class="menu-tab-navigation-item"><a href="#Spesiyaller">Spesiyaller</a></li>
-                        <li class="menu-tab-navigation-item"><a href="#Tatlilar">Tatlilar</a></li>
+                        <li class="menu-tab-navigation-item"><button class="menu-tab-navigation-item-link active" onclick="openMenu(event, 'Chef-mezzeler')" id="Chef-mezzeler-link">Chef mezzeler</button></li>
+                        <li class="menu-tab-navigation-item"><button class="menu-tab-navigation-item-link" onclick="openMenu(event, 'Otlu-mezzeler')" id="Otlu-mezzeler-link">Otlu mezzeler</button></li>
+                        <li class="menu-tab-navigation-item"><button class="menu-tab-navigation-item-link" onclick="openMenu(event, 'Denizden-mezzeler')" id="Denizden-mezzeler-link">Denizden mezzeler</button></li>
+                        <li class="menu-tab-navigation-item"><button class="menu-tab-navigation-item-link" onclick="openMenu(event, 'Salatalar')" id="Salatalar-link">Salatalar</button></li>
+                        <li class="menu-tab-navigation-item"><button class="menu-tab-navigation-item-link" onclick="openMenu(event, 'Ara-sicaklar')" id="Ara-sicaklar-link">Ara sıcaklar</button></li>
+                        <li class="menu-tab-navigation-item"><button class="menu-tab-navigation-item-link" onclick="openMenu(event, 'Sakatatlar')" id="Sakatatlar-link">Sakatatlar</button></li>
+                        <li class="menu-tab-navigation-item"><button class="menu-tab-navigation-item-link" onclick="openMenu(event, 'Ana-yemekler')" id="Ana-yemekler-link">Ana yemekler</button></li>
+                        <li class="menu-tab-navigation-item"><button class="menu-tab-navigation-item-link" onclick="openMenu(event, 'Tatlilar')" id="Tatlilar-link">Tatlılar</button></li>
                     </ul>
                     <div id="Chef-mezzeler" class="menu-tab-content">
                         <div class="menu-item">
@@ -186,16 +189,193 @@
                             <p class="menu-item-info">Köz patlıcan, deniz mahsulleri ve eritilmiş peynirden oluşan farklı bir lezzet.</p>
                         </div>
                     </div>
-                    <div id="Otlu-mezzeler" class="menu-tab-content">
-                        <h1>London</h1>
-                        <p>London is the capital city of England.</p>
+                    <div id="Otlu-mezzeler" class="menu-tab-content" style="display: none;">
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Şevket-i Bostan Semizotu</h1>
+                            <p class="menu-item-info">Buruk aromasıyla mezelerin arasında farkını ortaya çıkaran semizotu, otların yoğunlukta olduğu Ege mutfağının vazgeçilmez mezelerinden.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Kaya Koruğu</h1>
+                            <p class="menu-item-info">Acı, ekşi karışımı benzersiz tadıyla kaya koruğunu  bir de Chef Myhane farkı ile deneyin.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Karışık Ot Kavurması</h1>
+                            <p class="menu-item-info">Yabani pazı, ebegümeci ve arapsaçının lezzeti damağınızda kalacak!</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Deniz Börülcesi</h1>
+                            <p class="menu-item-info">Akdeniz ve Ege mutfağının incisi deniz börülcesi, hafif lezzeti ve yüksek enerjisiyle sizi bekliyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Cibes Sotesi</h1>
+                            <p class="menu-item-info">Yaz aylarında Ege mutfağında bolca tüketilen bir lezzet olan Cibes, sotesiyle meşhur bir yeşillik.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Deniz Yosunu</h1>
+                            <p class="menu-item-info">Kavrulmuş susam ve susam yağı deniz yosunu ile buluştuğunda ağzınızda enfes bir şölen oluyor.</p>
+                        </div>
                     </div>
-                    <div id="Denizden-mezzeler" class="menu-tab-content">
-                        <h1>London</h1>
-                        <p>London is the capital city of England.</p>
+                    <div id="Denizden-mezzeler" class="menu-tab-content" style="display: none;">
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Midye Dolma</h1>
+                            <p class="menu-item-info">Chef Meyhane‘nin özel tarifiyle hazırlanan midye dolma, klasik lezzetlerden vazgeçemeyenlerin favorisi.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Lakerda</h1>
+                            <p class="menu-item-info">Balık sevenlerin vazgeçemediği bir lezzet olan lakerda Chef yorumuyla sofralara geliyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Kişnişli Levrek Marine</h1>
+                            <p class="menu-item-info">Marine edilmiş levrek, Chef’in özel sosu ve kişniş ile servis ediliyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Karides Söğüş</h1>
+                            <p class="menu-item-info">Haşlanmış karidesin sade güzelliği,  Chef'in leziz dokunuşuyla bir başka oluyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">İsli Uskumru</h1>
+                            <p class="menu-item-info">Tütsülenmiş biberle soslanan uskumru, Soğan ve bol zeytinyağı ile servis ediliyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Ahtapot Söğüş</h1>
+                            <p class="menu-item-info">Nefis bir lezzet olan ahtapot, özel sosuyla servis ediliyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Avokado Karides</h1>
+                            <p class="menu-item-info">Avokadonun egzotik ve yoğun tadı, karidesin sade lezzetiyle bir araya geliyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">İsrail Kalamar</h1>
+                            <p class="menu-item-info">Chef Meyhane'den deniz kokusunu alarak tadını çıkartabileceğiniz bir lezzet.</p>
+                        </div>
+                    </div>
+                    <div id="Salatalar" class="menu-tab-content" style="display: none;">
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Roka Salatası</h1>
+                            <p class="menu-item-info">Rokanın ferahlatıcı tadı bu salatayı sofraların vazgeçilmezi yapıyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Yeşil Salata</h1>
+                            <p class="menu-item-info">Mevsim yeşillikleri mezelerin yanına çok yakışıyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Soğanlı Domates Salatası</h1>
+                            <p class="menu-item-info">Bu klasik salata Chef’in yorumuyla bir başka lezzetli oluyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Beyaz Peynirli Çoban Salata</h1>
+                            <p class="menu-item-info">Beyaz peynir klasik çoban salataya çok yakışıyor.</p>
+                        </div>
+                    </div>
+                    <div id="Ara-sicaklar" class="menu-tab-content" style="display: none;">
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Boureki Isırgan Otlu ve İsli Peynir</h1>
+                            <p class="menu-item-info">İsli peynir ve ısırgan otunun uyumu hem göze hem de damağa hitap ediyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Ahtapot Izgara</h1>
+                            <p class="menu-item-info">Özel sosuyla sunulan ahtapot bacağı ızgarası, Chef’in özel mezelerinden biri olarak sofralardaki yerini alıyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Deniz Mahsullü Güveç</h1>
+                            <p class="menu-item-info">Güveçte pişen birbirinden nefis deniz mahsulleri iç ısıtan bir lezzet yaratıyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Belen Tava</h1>
+                            <p class="menu-item-info">Hatay mutfağına ait bu nefis et yemeği tarif edilmez bir lezzet sunuyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Yaprak Ciğer</h1>
+                            <p class="menu-item-info">Ciğerin doğranma yöntemiyle farkının ortaya konduğu Edirne güzeli yaprak ciğer.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Karides Güveç</h1>
+                            <p class="menu-item-info">Güveçte hazırlanan karides, bu sevilen deniz lezzetine farklı bir lezzet katıyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Balık Kokoreç</h1>
+                            <p class="menu-item-info">Klasik kokoreçe farklı bir yorum... Deniz mahsullerinden yapılan bu farklı lezzeti denemelisiniz.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Izgara Kalamar</h1>
+                            <p class="menu-item-info">Kalamarın sadeliğinden vazgeçemeyenler için alternatifi olmayan bir lezzet.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Tereyağlı Karides</h1>
+                            <p class="menu-item-info">İnce kıyılmış maydonozun ve enfes tereyağın eşlik ettiği müthiş bir karides lezzeti.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Kadayıfa Sarılı Çıtır Karides</h1>
+                            <p class="menu-item-info">Kadayıfa sarılıp kızartılan karides, çıtır lezzetiyle sofralarda sık rastlanmayan farklı bir alternatif.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Pastırmalı Karides</h1>
+                            <p class="menu-item-info">Jumbo karidesin baharatlarının aromasıyla baş döndüren pastırmayla buluşması.</p>
+                        </div>
+                    </div>
+                    <div id="Sakatatlar" class="menu-tab-content" style="display: none;">
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Terbiyeli İşkembe Söğüş</h1>
+                            <p class="menu-item-info">Chef’in özel tarifiyle terbiyelenen işkembe söğüş sofralara ayrı bir lezzet katıyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Beyin Söğüş</h1>
+                            <p class="menu-item-info">Meze sofralarının vazgeçilmezi olan bu lezzet Chef Meyhane’de yerini alıyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Dil Söğüş</h1>
+                            <p class="menu-item-info">Sakatat sevenlerin rüyası olan dil söğüşün tadına doyamayacaksınız.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Kuzu Kokoreç</h1>
+                            <p class="menu-item-info">Fırında pişirilen kuzu kokoreç, bu klasik lezzete farklı bir yorum.</p>
+                        </div>
+                    </div>
+                    <div id="Ana-yemekler" class="menu-tab-content" style="display: none;">
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Chef Meyhane Köfte</h1>
+                            <p class="menu-item-info">Chef'in özel tarifiyle hazırlanan nefis köfteler bir Chef Meyhane klasiği olarak menüde yerini alıyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Cafe de Paris Soslu Bonfile</h1>
+                            <p class="menu-item-info">Güney Fransa’nın dünya mutfağına hediye ettiği rokfor peynirinin soğan ve sarımsakla buluşması.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Somon Izgara</h1>
+                            <p class="menu-item-info">Somon balığı, Chef'in hamarat ellerinden olunca ortaya bir lezzet şöleni çıkıyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Günün Balığı</h1>
+                            <p class="menu-item-info">Mevsimine göre balık çeşitleri fırında, ızgarada, tavada veya buharda pişiriliyor.</p>
+                        </div>
+                    </div>
+                    <div id="Tatlilar" class="menu-tab-content" style="display: none;">
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Chef Meyhane Katmer</h1>
+                            <p class="menu-item-info">Antep usülü katmer, Chef'in özel tarifiyle damakları şenlendirmeye devam ediyor.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Ayvalık Lor Tatlısı</h1>
+                            <p class="menu-item-info">Taze lor peynirinden yapılan Ayvalık’a özgü bu özel tarif, nefis bir yemeği taçlandırmak için bire bir.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">Sufle</h1>
+                            <p class="menu-item-info">Tam kıvamında ve çikolatasının yoğun tadıyla içinizi ısıtacak bir klasik.</p>
+                        </div>
+                        <div class="menu-item">
+                            <h1 class="menu-item-heading">İrmik Helvası</h1>
+                            <p class="menu-item-info">Mutfağımızın geleneksel lezzetlerinden irmik helvası özellikle balığın ardından ayrı bir nefis oluyor.</p>
+                        </div>
                     </div>
                 </div>
-                <h4 class="fix-menu-info">Fiks menülerimizi görmek için tıklayınız.</h4>
+                <div style="text-align: center;">
+                    <button id="fix-menu-info">FİKS MENÜLER</h4>
+                </div>
+                <!-- The Modal -->
+                <div id="fix-menu" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                </div>
             </div>
         </section>
         <section id="reservation">
@@ -203,7 +383,7 @@
             <div id="reztoran-widget">
                 <h4 class="reservation-info">Rezervasyon için aşağıdaki formu doldurabilirsiniz.</h4>
                 <div>
-                    <iframe class="embed-responsive-item" src="http://widget.reztoran.com/tr/chef-meyhane-widget?&bgColor=fff&primaryButton=824328&textColor=824328&inputColor=ab7868&linkColor=e3a668&font=georgia" width="auto" height="400" seamless="seamless" scrolling="no" frameborder="0" style="width:100%"></iframe>
+                    <iframe class="embed-responsive-item" src="http://widget.reztoran.com/tr/chef-meyhane-widget?&bgColor=fff&primaryButton=00abbe&textColor=00abbe&inputColor=262262&linkColor=262262&font=georgia" width="auto" height="500" seamless="seamless" scrolling="no" frameborder="0" style="width:100%"></iframe>
                 </div>
             </div>
         </section>
@@ -214,12 +394,12 @@
                     <div class="main-brand"><img src="./images/chefgrup-logo.png" alt="" class="main-brand-image"></div>
                     <div class="sub-brands">
                         <div class="sub-brand"><img src="./images/chefmeyhane-logo.png" alt="" class="sub-brand-image"></div>
-                        <div class="sub-brand"><img src="./images/chefmezze-logo.png" alt="" class="sub-brand-image"></div>
-                        <div class="sub-brand"><img src="./images/chefdoner-logo.png" alt="" class="sub-brand-image"></div>
+                        <div class="sub-brand"><a href="https://chefmezze.com.tr/" target="_blank"><img src="./images/chefmezze-logo.png" alt="" class="sub-brand-image"></a></div>
+                        <div class="sub-brand"><a href="https://chefdoner.com.tr/" target="_blank"><img src="./images/chefdoner-logo.png" alt="" class="sub-brand-image"></a></div>
                     </div>
                 </div>
                 <div class="brand-info"><p class="brand-info-text">Türkiye’de yepyeni lezzet konseptlerinin yaratıcısı olarak bilinen Gazi ve Bilal Ateş, Chef Mezze ile başlayan yolculuklarına Chef Grup çatısı altında hız kesmeden devam ediyor. Chef Mezze ile geleneksel meyhane anlayışına modern bir yaklaşım getiren Chef Grup, ikinci adımı olan Chef Döner’le bir “sokak lezzeti” olan döneri artizan tatlarla bir araya getirerek bir ilke daha imza attı. Son olarak “Arnavutköy’de modern bir Girit meyhanesi” konseptiyle hayata geçirilen Chef Meyhane ile Türkiye’de meze ve meyhane denince ilk akla gelen isimlerden biri olduğunu kanıtlayan Chef Grup, yepyeni lezzet projeleriyle gastronomi dünyamızda çığır açmayı sürdürecek.</p></div>
-                <div><a href="#" class="brand-link">chefgrup.com</a></div>
+                <div><a href="http://chefgrup.com/" target="_blank" class="brand-link">chefgrup.com</a></div>
             </div>
         </section>
         <section id="gallery">
@@ -232,7 +412,6 @@
             <img src="./images/gallery07.jpg" alt="" class="gallery-image">
             <img src="./images/gallery08.jpg" alt="" class="gallery-image">
             <img src="./images/gallery09.jpg" alt="" class="gallery-image">
-            <img src="./images/gallery10.jpg" alt="" class="gallery-image">
         </section>
         <section id="contact">
             <p class="label"><span class="label-text label-text-left">iletişim</span></p>
@@ -254,7 +433,8 @@
         </section>
     </main>
     <footer>
-        <p class="footer-text">&copy; Chef Meyhane Arnavutköy, 2018.</p>
+        <p class="footer-text">&copy; Chef Meyhane Arnavutköy, 2018</p>
+        <a href="#" id="back-to-top"><i class="fas fa-2x fa-chevron-up"></i></a>
     </footer>
 
     <script src="./js/main.js"></script>
