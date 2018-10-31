@@ -1,7 +1,7 @@
 # Chef Grup Projects
 
 ## Chef Grup
-Production: http://chefgrup.com/
+Production: http://chefgrup.com/  
 Development: http://chef-grup.surge.sh/
 * Media queries
 * Flexbox Grid
@@ -9,7 +9,7 @@ Development: http://chef-grup.surge.sh/
 * Semantic HTML
 
 ## Chef Meyhane
-Production: http://chefmeyhanearnavutkoy.com/
+Production: http://chefmeyhanearnavutkoy.com/  
 Development: http://chef-meyhane.surge.sh/
 * Media queries
 * Flexbox Grid
