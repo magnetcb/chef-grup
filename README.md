@@ -1,6 +1,6 @@
-# Chef Grup
+# Chef Grup Projects
 
-## http://chef-grup.surge.sh/
+## http://chefgrup.com http://chef-grup.surge.sh/
 * Flexbox
 * linear-gradient background
 * Semantic HTML
