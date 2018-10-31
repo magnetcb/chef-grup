@@ -24,7 +24,7 @@ function openMenu(evt, menuName) {
         menuTabContent[i].style.display = "none";
     }
 
-    menuTabLinks = document.getElementsByClassName("menu-tab-navigation-item-link");
+    menuTabLinks = document.getElementsByClassName("menu-tab-navigation-item-button");
 
     for (i = 0; i < menuTabLinks.length; i++) {
         menuTabLinks[i].className = menuTabLinks[i].className.replace(" active", "");

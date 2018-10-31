@@ -305,18 +305,22 @@ button.carousel__button {
     margin: 1em;
 }
 
-.menu-tab-navigation-item-link {
+.menu-tab-navigation-item-button {
     border: none;
+    border-radius: 5px;
     color: #00abbe;
+    padding: 5px;
     cursor: pointer;
     font-weight: 500;
     font-size: 1.2em;
     background: none;
+    transition: all .2s ease-in-out;
 }
 
 .menu-tab-navigation-item button.active,
 .menu-tab-navigation-item button:hover {
-    border-bottom: 2px solid #00abbe;
+    background-color: #00abbe;
+    color: white;
 }
 
 .menu-tab-content {
