@@ -202,7 +202,7 @@ button.carousel__button {
 }
 
 .subtitle {
-    margin: 25px 10%;
+    margin: 25px 10% 0px 10%;
 }
 
 @media screen and (max-width: 768px) {
