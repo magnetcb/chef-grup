@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: auto;
     font-family: 'Montserrat', sans-serif;
@@ -15,6 +19,7 @@ body {
 
 button {
     font-family: inherit;
+    outline: none;
 }
 
 @media screen and (max-width: 768px) {
