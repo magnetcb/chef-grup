@@ -1,3 +1,4 @@
+/* Lory Slider Initialization */
 document.addEventListener("DOMContentLoaded", function() {
   run();
 });
@@ -34,12 +35,14 @@ function openMenu(evt, menuName) {
     evt.currentTarget.className += " active";
 }
 
+/* Fix Menu Modal */
+
 // Get the modal
 var modal = document.getElementById('fix-menu');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('fix-menu-info');
-var modalImg = document.getElementById("img01");
+var modalImg = document.getElementById("modal-image");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = './images/fix-menu.jpg';
@@ -53,56 +56,24 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
-/* Mobile Menu */
-/*
-    var toggle = document.getElementById('toggle');
-    var mobileNavbar = document.getElementById('mobile-navbar');
-    var displayStyleOfMobileNavbar = mobileNavbar.style.display;
+/* Mobile Menu Logic */
+var mobileNavbar = document.getElementById('mobile-navbar');
 
-    toggle.addEventListener('click', function() {
-        if(displayStyleOfMobileNavbar == 'none') {
-            displayStyleOfMobileNavbar = 'block';
-            console.log(displayStyleOfMobileNavbar);
-        } else {
-            displayStyleOfMobileNavbar = 'none';
-            console.log(displayStyleOfMobileNavbar);
-        }
-    });
-
-    BU NEDEN CALISMADI????
-*/
-
-/* Mobile Menu */
 document.getElementById('toggle').addEventListener('click', function () {
-    toggle(document.querySelectorAll('.target'));
+    toggle(mobileNavbar);
 });
 
-function toggle (elements, specifiedDisplay) {
-  var element, index;
-
-  elements = elements.length ? elements : [elements];
-  for (index = 0; index < elements.length; index++) {
-    element = elements[index];
-
-    if (isElementHidden(element)) {
-      element.style.display = '';
-
-      // If the element is still hidden after removing the inline display
-      if (isElementHidden(element)) {
-        element.style.display = specifiedDisplay || 'block';
-      }
+function toggle (element) {
+    if(element.style.display === 'none' || element.style.display === '') {
+        element.style.display = 'block';
     } else {
-      element.style.display = 'none';
+        element.style.display = 'none';
     }
-  }
-  function isElementHidden (element) {
-    return window.getComputedStyle(element, null).getPropertyValue('display') === 'none';
-  }
 }
 
-// BACK TO TOP Button
+/* BACK TO TOP Button */
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
