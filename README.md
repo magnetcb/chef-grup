@@ -7,6 +7,7 @@ Development: http://chef-grup.surge.sh/
 * Flexbox Grid
 * linear-gradient background
 * Semantic HTML
+* PHPMailer
 
 ## Chef Meyhane
 Production: http://chefmeyhanearnavutkoy.com/  
@@ -15,3 +16,4 @@ Development: http://chef-meyhane.surge.sh/
 * Flexbox Grid
 * Semantic HTML
 * Lory.js for Slider - http://meandmax.github.io/lory/
+* Google Maps Widget
