@@ -82,11 +82,6 @@ a {
     display: none;
 }
 
-.nav-wrapper ul li:last-child .navbar-link,
-ul#mobile-navbar li:last-child .navbar-link {
-    color: black;
-}
-
 .logo {
     margin: 1em;
 }
