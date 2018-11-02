@@ -304,6 +304,10 @@ button.carousel__button {
     display: inline-block;
     margin: 1em;
     text-align: center;
+} @media screen and (max-width: 532px) {
+    .menu-tab-navigation-item {
+        margin: 0.5em;
+    }
 }
 
 .menu-tab-navigation-item button.active,
@@ -323,7 +327,7 @@ button.carousel__button {
     transition: all .2s ease-in-out;
 } @media screen and (max-width: 532px) {
     .menu-tab-navigation-item-button {
-        min-width: 140px;
+        min-width: 150px;
         padding: 10px;
         font-size: 1em;
         background-color: #f5f5f5;
