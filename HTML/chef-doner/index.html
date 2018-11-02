@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chef Doner</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -13,23 +13,39 @@
     <header id="header">
         <nav>
             <div id="logo">
-                <a href="#"><img src="./images/logo.png" width="100%" alt="Chef Döner logo"></a>
+                <a href="#home"><img src="./images/logo.png" width="100%" alt="Chef Döner logo"></a>
             </div>
             <ul id="navbar">
-                <li class="navbar-item">hakkimizda</li>
-                <li class="navbar-item">menu</li>
-                <li class="navbar-item">galeri</li>
-                <li class="navbar-item">franchising</li>
-                <li class="navbar-item">kariyer</li>
-                <li class="navbar-item">iletisim</li>
+                <li class="navbar-item"><a href="#about">hakkımızda</a></li>
+                <li class="navbar-item"><a href="#menu">menü</a></li>
+                <li class="navbar-item"><a href="#gallery">galeri</a></li>
+                <li class="navbar-item"><a href="#franchising">franchising</a></li>
+                <li class="navbar-item"><a href="#career">kariyer</a></li>
+                <li class="navbar-item"><a href="#contact">iletişim</a></li>
             </ul>
         </nav>
     </header>
     <footer id="footer"></footer>
     <div id="fullpage">
-        <div class="section" id="home">Some section</div>
-        <div class="section" id="about">Some section</div>
-        <div class="section" id="menu">Some section</div>
+        <div class="section" id="home">
+            <div class="heading-container">
+                <img src="./images/home-heading.png" alt="">
+            </div>
+        </div>
+        <div class="section" id="about">
+            <div class="heading-container">
+                <img src="./images/about-heading.png" alt="">
+            </div>
+            <p class="about-text">
+                Bazen bir lezzetin yeniden keşfedilmesi için ona çok farklı açılardan bakmak gerekir. İşin mutfağından gelen, meze kültürünü Türkiye’de yeniden tanımlamak için yola çıkan Gazi ve Bilal Ateş, “aynı şey neden dönere yapılamasın” diye sorduklarında, mutfaklarından çıkan cevap Chef Döner oldu. Güçlü lezzet reçeteleri ile dönerin klasik tadını bir araya getiren kardeşler, geleneksel bir lezzeti yeniden tanımlayarak, Chef Döner markasını oluşturdular.
+            </p>
+        </div>
+        <div class="section" id="menu">
+            <div class="heading-container">
+                <img src="./images/menu-heading.png" alt="">
+            </div>
+            <button class="menu-button">menü</button>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/vendors/easings.min.js"></script>

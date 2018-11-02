@@ -1,11 +1,18 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .section{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    text-align: center;
 }
 
 #home {
@@ -43,11 +50,32 @@ nav {
     list-style: none;
     text-align: right;
     margin: 2em;
-    margin-right: 3em;
     line-height: 1.5;
 }
 
 #logo {
     width: 150px;
     margin: 1em;
+}
+
+.home-text {
+    font-size: 2em;
+    text-align: center;
+}
+
+.menu-button {
+    margin-top: 15px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    padding: 10px 2%;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: white;
+    border: none;
+    background-color: #dcbf6a;
+}
+
+.about-text {
+    margin: auto;
+    width: 500px;
 }
