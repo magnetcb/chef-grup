@@ -335,11 +335,17 @@ button.carousel__button {
     min-width: 300px;
     padding: 1em;
     font-size: 0.75em;
-}
-
-@media screen and (max-width: 768px) {
+} @media screen and (max-width: 768px) {
     .menu-item  {
         font-size: 1em;
+    }
+}
+
+.menu-item-heading {
+    margin-bottom: 10px;
+} @media screen and (max-width: 768px) {
+    .menu-item-heading  {
+        font-size: 1.25em;
     }
 }
 
@@ -626,5 +632,14 @@ footer {
 @media screen and (max-width: 768px) {
     footer {
         margin-top: 5%;
+        margin-bottom: 75px;
+    }
+
+    #back-to-top {
+        padding-bottom: 0px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        opacity: 0.8;
     }
 }
