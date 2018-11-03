@@ -21,5 +21,5 @@ Development: http://chef-meyhane.surge.sh/
 ## Chef Döner
 * Media queries
 * Semantic HTML
-* fullPage.js for Slider - https://alvarotrigo.com/fullPage/
+* **fullPage.js** for Slider - https://alvarotrigo.com/fullPage/
 * Google Maps Widget
