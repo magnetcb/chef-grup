@@ -1,6 +1,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: white;
+    font-weight: 300;
+    font-size: 1em;
 }
 
 a {
@@ -15,14 +17,9 @@ a {
     text-align: center;
 }
 
-#home {
-    background-image: url('../images/home.png');
-}
-#about {
-    background-image: url('../images/about.png');
-}
-#menu {
-    background-image: url('../images/menu.png');
+#home .heading-container {
+    padding-top: 20%;
+    margin-right: 12%;
 }
 
 #header, #footer{
@@ -46,16 +43,79 @@ nav {
     justify-content: space-between;
 }
 
+#logo {
+    width: 150px;
+    margin: 1em;
+} @media screen and (max-width: 500px) {
+    #logo {
+        width: 100px;
+    }
+}
+
 #navbar {
     list-style: none;
     text-align: right;
     margin: 2em;
     line-height: 1.5;
+    font-size: 85%;
+}
+#navbar li.active {
+	color: #dcbf6a;
+}
+#navbar li a {
+    display: block;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+#navbar li.active a:hover {
+	color: #dcbf6a;
+}
+#navbar li:hover {
+    color: #dcbf6a;
+}
+#navbar li.active a {
+	color: #dcbf6a;
 }
 
-#logo {
-    width: 150px;
-    margin: 1em;
+.heading-container {
+    margin: auto;
+    width: 25%;
+}
+
+.heading-container img {
+    width: 100%;
+}
+
+#home {
+    background-image: url('../images/home.png');
+} @media screen and (max-width: 500px) {
+    .heading-container {
+        margin: auto;
+        width: 60%;
+    }
+
+    #home {
+        background-position: top;
+        background-image: url('../images/home-vertical.png');
+    }
+    #home .heading-container {
+        padding-bottom: 90%;
+        margin-right: 5%;
+    }
+}
+#about {
+    background-image: url('../images/about.png');
+} @media screen and (max-width: 500px) {
+    #about {
+        background-image: url('../images/about-vertical.png');
+    }
+}
+#menu {
+    background-image: url('../images/menu.png');
+} @media screen and (max-width: 500px) {
+    #menu {
+        background-image: url('../images/menu-vertical.png');
+    }
 }
 
 .home-text {
@@ -77,5 +137,5 @@ nav {
 
 .about-text {
     margin: auto;
-    width: 500px;
+    width: 50%;
 }
