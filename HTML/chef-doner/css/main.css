@@ -127,6 +127,7 @@ nav {
 .about-text {
     margin: auto;
     width: 50%;
+    text-shadow: 1px 1px #000000;
 }
 
 /* Menu SECTION */
