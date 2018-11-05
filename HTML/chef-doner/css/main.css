@@ -14,7 +14,7 @@ a {
     position:fixed;
     display:block;
     width: 100%;
-    z-index:9;
+    z-index: 9;
     text-align:center;
     color: #f2f2f2;
 }
@@ -147,7 +147,7 @@ nav {
     text-align: center;
 }
 
-.menu-button {
+#menu-button {
     margin-top: 15px;
     letter-spacing: 2px;
     border-radius: 10px;
