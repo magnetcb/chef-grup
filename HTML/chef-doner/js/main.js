@@ -4,7 +4,7 @@ var myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#navbar',
 	lockAnchors: false,
-	anchors:['homePage', 'aboutPage', 'menuPage'],
+	anchors:['homePage', 'aboutPage', 'menuPage', 'franchisingPage', 'careerPage'],
 	navigation: false,
 	navigationPosition: 'left',
 	showActiveTooltip: false,

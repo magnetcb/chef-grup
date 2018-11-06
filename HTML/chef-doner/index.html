@@ -7,6 +7,8 @@
     <title>Chef Döner</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.css" />
+
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -20,8 +22,8 @@
                 <li data-menuanchor="aboutPage" class="navbar-item"><a href="#about">hakkımızda</a></li>
                 <li data-menuanchor="menuPage" class="navbar-item"><a href="#menu">menü</a></li>
                 <li class="navbar-item"><a href="#gallery">galeri</a></li>
-                <li class="navbar-item"><a href="#franchising">franchising</a></li>
-                <li class="navbar-item"><a href="#career">kariyer</a></li>
+                <li data-menuanchor="franchisingPage" class="navbar-item"><a href="#franchising">franchising</a></li>
+                <li data-menuanchor="careerPage" class="navbar-item"><a href="#career">kariyer</a></li>
                 <li class="navbar-item"><a href="#contact">iletişim</a></li>
             </ul>
         </nav>
@@ -35,10 +37,8 @@
         </div>
         <div class="section" id="about">
             <div class="about-wrapper">
-                <div class="heading-container">
-                    <img src="./images/about-heading.png" alt="">
-                </div>
                 <p class="about-text">
+                    <img src="./images/about-heading.png" alt=""> <br>
                     Bazen bir lezzetin yeniden keşfedilmesi için ona çok farklı açılardan bakmak gerekir. İşin mutfağından gelen, meze kültürünü Türkiye’de yeniden tanımlamak için yola çıkan Gazi ve Bilal Ateş, “aynı şey neden dönere yapılamasın” diye sorduklarında, mutfaklarından çıkan cevap Chef Döner oldu. Güçlü lezzet reçeteleri ile dönerin klasik tadını bir araya getiren kardeşler, geleneksel bir lezzeti yeniden tanımlayarak, Chef Döner markasını oluşturdular.
                 </p>
             </div>
@@ -49,6 +49,30 @@
                     <img src="./images/menu-heading.png" alt="">
                 </div>
                 <button id="menu-button">menü</button>
+            </div>
+        </div>
+        <div class="section" id="franchising">
+            <div class="franchising-wrapper">
+                <form id="franchising-form" action="" method="POST">
+                    <p>Chef Döner lezzetlerine ev sahipliği yapmak için aşağıdaki formu doldurabilirsiniz.</p>
+                    <input type="text" id="fullname" placeholder="Ad Soyad">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="text" id="phone" placeholder="Telefon">
+                    <input type="text" id="message" placeholder="Eklemek istedikleriniz">
+                    <input type="submit" value="Gonder">
+                </form>
+            </div>
+        </div>
+        <div class="section" id="career">
+            <div class="career-wrapper">
+                <form id="career-form" action="" method="POST">
+                    <p>Chef Döner'de karşınıza çıkabilecek pek çok kariyer fırsatı var. Eğer siz de Chef'lerin lezzet dünyasında bir kariyer düşünüyorsanız, bize buradan ulaşmanız yeterli.</p>
+                    <input type="text" id="fullname" placeholder="Ad Soyad">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="text" id="phone" placeholder="Telefon">
+                    <input type="text" id="message" placeholder="Eklemek istedikleriniz">
+                    <input type="submit" value="Gonder">
+                </form>
             </div>
         </div>
     </div>
