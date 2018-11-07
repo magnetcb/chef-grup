@@ -7,8 +7,6 @@
     <title>Chef Döner</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.css" />
-
-    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -24,7 +22,7 @@
                 <li class="navbar-item"><a href="#gallery">galeri</a></li>
                 <li data-menuanchor="franchisingPage" class="navbar-item"><a href="#franchising">franchising</a></li>
                 <li data-menuanchor="careerPage" class="navbar-item"><a href="#career">kariyer</a></li>
-                <li class="navbar-item"><a href="#contact">iletişim</a></li>
+                <li data-menuanchor="contactPage" class="navbar-item"><a href="#contact">iletişim</a></li>
             </ul>
         </nav>
     </header>
@@ -75,11 +73,30 @@
                 </form>
             </div>
         </div>
+        <div class="section" id="contact">
+            <div class="contact-wrapper">
+                <img id="contact-heading" src="./images/contact-heading.png" alt="">
+                <div class="contact-info">
+                    <div id="map"></div>
+                    <div class="info">
+                        <p>asdassda</p>
+                        <p>asdassda</p>
+                        <p>asdassda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/vendors/easings.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/vendors/scrolloverflow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.js"></script>
     <script src="./js/main.js"></script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaiGZEL69Qu3xgF7nboqed4akblagc8jU&callback=initMap"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ var myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#navbar',
 	lockAnchors: false,
-	anchors:['homePage', 'aboutPage', 'menuPage', 'franchisingPage', 'careerPage'],
+	anchors:['homePage', 'aboutPage', 'menuPage', 'franchisingPage', 'careerPage', 'contactPage'],
 	navigation: false,
 	navigationPosition: 'left',
 	showActiveTooltip: false,
@@ -24,3 +24,21 @@ var myFullpage = new fullpage('#fullpage', {
 	parallax: false,
 	parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'}
 });
+
+/* Google Maps */
+// Initialize and add the map
+function initMap() {
+	// The location of Uluru
+	var uluru = { lat: -25.344, lng: 131.036 };
+	// The map, centered at Uluru
+	var map = new google.maps.Map(
+		document.getElementById('map'), {
+			zoom: 4, 
+			center: uluru
+		});
+	// The marker, positioned at Uluru
+	var marker = new google.maps.Marker({
+		position: uluru, 
+		map: map
+	});
+}
