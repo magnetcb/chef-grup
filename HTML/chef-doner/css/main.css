@@ -54,11 +54,11 @@ form input[type=submit] {
 
 /* Header and Footer */
 #header, #footer{
-    position:fixed;
-    display:block;
+    position: fixed;
+    display: block;
     width: 100%;
     z-index: 9;
-    text-align:center;
+    text-align: center;
     color: #f2f2f2;
 }
 #header{
@@ -125,27 +125,33 @@ nav {
     width: 25%;
 }
 
-@media screen and (max-width: 500px) {
-    .heading-container img {
-        width: 300px;
-    }
+.heading-container img {
+    width: 100%;
 }
 
 /* Home SECTION */
 #home .heading-container {
-    padding-top: 20%;
+    padding-top: 25%;
     margin-right: 15%;
+    min-width: 300px;
 }
 #home {
     background-image: url('../images/home.png');
-} @media screen and (max-width: 500px) {
+} @media only screen and (max-width: 500px) {
     #home {
         background-position: top;
         background-image: url('../images/home-vertical.png');
     }
     #home .heading-container {
-        padding-bottom: 80%;
-        margin-right: 0;
+        margin: auto;
+        padding: 1em;
+        padding-bottom: 220px;
+        padding-left: 120px;
+        width: 200px;
+    }
+
+    #home .heading-container img {
+        width: 75%;
     }
 }
 
@@ -184,11 +190,11 @@ nav {
     #menu {
         background-image: url('../images/menu-vertical.png');
     }
-}
 
-.home-text {
-    font-size: 2em;
-    text-align: center;
+    #menu .menu-wrapper {
+        margin: auto;
+        margin-top: 100px;
+    }
 }
 
 #menu-button {
@@ -242,13 +248,14 @@ form#career-form {
 .contact-wrapper {
     margin: auto;
     width: 75%;
-    border: 10px solid transparent;
-    border-image: url('../images/corner.png') 50 round;
+/*     border: 10px solid transparent;
+    border-image: url('../images/corner.png') 50 round; */
     padding: 1%;
     margin-top: 2em;
 }
 
 #contact-heading {
+    min-width: 150px;
     width: 25%;
 }
 
@@ -261,11 +268,16 @@ form#career-form {
 #map {
     margin: auto;
     height: 300px;  /* The height is 400 pixels */
-    width: 40%;  /* The width is the width of the web page */
+    width: 50%;  /* The width is the width of the web page */
 }
 
 .info {
     margin: auto;
+    width: 50%;
+}
+
+.info p {
+    line-height: 1.5;
 }
 
 @media screen and (max-width: 768px) {
@@ -280,5 +292,6 @@ form#career-form {
 
     #map {
         width: 90%;  /* The width is the width of the web page */
+        height: 200px;
     }
 }
