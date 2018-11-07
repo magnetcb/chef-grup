@@ -125,14 +125,16 @@ nav {
     width: 25%;
 }
 
-.heading-container img {
-    width: 100%;
+@media screen and (max-width: 500px) {
+    .heading-container img {
+        width: 300px;
+    }
 }
 
 /* Home SECTION */
 #home .heading-container {
     padding-top: 20%;
-    margin-right: 12%;
+    margin-right: 15%;
 }
 #home {
     background-image: url('../images/home.png');
@@ -142,8 +144,8 @@ nav {
         background-image: url('../images/home-vertical.png');
     }
     #home .heading-container {
-        padding-bottom: 90%;
-        margin-right: 5%;
+        padding-bottom: 80%;
+        margin-right: 0;
     }
 }
 
