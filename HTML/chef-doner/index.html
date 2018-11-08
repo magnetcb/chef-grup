@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chef Döner</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/fullPage.js/dist/fullpage.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -16,13 +16,13 @@
                 <a href="#homePage"><img src="./images/logo.png" width="100%" alt="Chef Döner logo"></a>
             </div>
             <ul id="navbar">
-                <li data-menuanchor="homePage" class="navbar-item active" style="display: none;"><a href="#home">anasayfa</a></li>
-                <li data-menuanchor="aboutPage" class="navbar-item"><a href="#about">hakkımızda</a></li>
-                <li data-menuanchor="menuPage" class="navbar-item"><a href="#menu">menü</a></li>
+                <li data-menuanchor="homePage" class="navbar-item active" style="display: none;"><a href="#homePage">anasayfa</a></li>
+                <li data-menuanchor="aboutPage" class="navbar-item"><a href="#aboutPage">hakkımızda</a></li>
+                <li data-menuanchor="menuPage" class="navbar-item"><a href="#menuPage">menü</a></li>
                 <li class="navbar-item"><a href="#gallery">galeri</a></li>
-                <li data-menuanchor="franchisingPage" class="navbar-item"><a href="#franchising">franchising</a></li>
-                <li data-menuanchor="careerPage" class="navbar-item"><a href="#career">kariyer</a></li>
-                <li data-menuanchor="contactPage" class="navbar-item"><a href="#contact">iletişim</a></li>
+                <li data-menuanchor="franchisingPage" class="navbar-item"><a href="#franchisingPage">franchising</a></li>
+                <li data-menuanchor="careerPage" class="navbar-item"><a href="#careerPage">kariyer</a></li>
+                <li data-menuanchor="contactPage" class="navbar-item"><a href="#contactPage">iletişim</a></li>
             </ul>
         </nav>
     </header>
@@ -57,7 +57,7 @@
                     <input type="email" id="email" placeholder="Email">
                     <input type="text" id="phone" placeholder="Telefon">
                     <input type="text" id="message" placeholder="Eklemek istedikleriniz">
-                    <input type="submit" value="Gonder">
+                    <input type="submit" value="Gönder">
                 </form>
             </div>
         </div>
@@ -69,7 +69,7 @@
                     <input type="email" id="email" placeholder="Email">
                     <input type="text" id="phone" placeholder="Telefon">
                     <input type="text" id="message" placeholder="Eklemek istedikleriniz">
-                    <input type="submit" value="Gonder">
+                    <input type="submit" value="Gönder">
                 </form>
             </div>
         </div>
@@ -91,10 +91,23 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/vendors/easings.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/vendors/scrolloverflow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.js"></script>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+    
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+    
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+
+    <script src="./libs/fullPage.js/vendors/easings.js"></script>
+    <script src="./libs/fullPage.js/vendors/scrolloverflow.js"></script>
+    <script src="./libs/fullPage.js/dist/fullpage.js"></script>
     <script src="./js/main.js"></script>
+
     <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
     * The key parameter will contain your own API key (which is not needed for this tutorial)

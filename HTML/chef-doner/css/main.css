@@ -11,6 +11,10 @@ a {
     color: white;
 }
 
+p {
+    font-size: 1em;
+}
+
 form {
     margin: auto;
     padding: 1em;
@@ -18,12 +22,13 @@ form {
     color: black;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 form p {
     margin: 1em;
-    font-size: 1.15em;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 form input {
@@ -44,12 +49,15 @@ form input[type=submit] {
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
     opacity: 1; /* Firefox */
+    font-size: 0.8em;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: black;
+    font-size: 0.8em;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: black;
+    font-size: 0.8em;
 }
 
 /* Header and Footer */
@@ -156,28 +164,42 @@ nav {
 }
 
 /* About SECTION */
-#about .about-wrapper {
+#about {
+    background-image: url('../images/about.png');
+}
+
+.about-wrapper {
     margin-bottom: 15%;
     margin-left: 50%;
     font-size: 0.8em;
     line-height: 1.5em;
     text-align: left;
 }
-#about {
-    background-image: url('../images/about.png');
-} @media screen and (max-width: 500px) {
-    #about {
-        background-image: url('../images/about-vertical.png');
-    }
-    #about .heading-container {
-        padding-bottom: 90%;
-        margin-right: 5%;
-    }
-}
 
 .about-text {
     margin: auto;
     width: 50%;
+}
+
+@media screen and (max-width: 500px) {
+    #about {
+        background-image: url('../images/about-vertical.png');
+    }
+
+    .about-wrapper {
+        margin: auto;
+        margin: 1em;
+        padding-top: 50%;
+        margin-left: 150px;
+        width: 50%;
+    }
+
+    .about-text {
+        margin: auto;
+        width: 100%;
+        font-size: 0.8em;
+        line-height: 1em;
+    }
 }
 
 /* Menu SECTION */
@@ -194,6 +216,10 @@ nav {
     #menu .menu-wrapper {
         margin: auto;
         margin-top: 100px;
+    }
+
+    .menu-wrapper .heading-container {
+        width: 45%;
     }
 }
 
@@ -212,10 +238,6 @@ nav {
 /* Franchising SECTION */
 #franchising {
     background-image: url('../images/franchising.png');
-} @media screen and (max-width: 500px) {
-    #franchising {
-        background-image: url('../images/franchising-vertical.png');
-    }
 }
 
 form#franchising-form {
@@ -223,17 +245,36 @@ form#franchising-form {
     width: 30%;
 }
 
+@media screen and (max-width: 500px) {
+    #franchising {
+        background-image: url('../images/franchising-vertical.png');
+    }
+
+    form#franchising-form {
+        margin: auto;
+        margin-top: 120px;
+        width: 80%;
+    }
+}
+
 /* Career SECTION */
 #career {
     background-image: url('../images/career.png');
-} @media screen and (max-width: 500px) {
-    #career {
-        background-image: url('../images/career-vertical.png');
-    }
 }
 
 form#career-form {
     width: 60%;
+}
+
+@media screen and (max-width: 500px) {
+    #career {
+        background-image: url('../images/career-vertical.png');
+    }
+
+    form#career-form {
+        margin-top: 120px;
+        width: 80%;
+    }
 }
 
 /* Contact SECTION */
@@ -248,8 +289,8 @@ form#career-form {
 .contact-wrapper {
     margin: auto;
     width: 75%;
-/*     border: 10px solid transparent;
-    border-image: url('../images/corner.png') 50 round; */
+    border: 10px solid transparent;
+    border-image: url('../images/corner.png') 50 round;
     padding: 1%;
     margin-top: 2em;
 }
@@ -267,8 +308,8 @@ form#career-form {
 
 #map {
     margin: auto;
-    height: 300px;  /* The height is 400 pixels */
-    width: 50%;  /* The width is the width of the web page */
+    height: 300px;
+    width: 50%;
 }
 
 .info {
@@ -291,7 +332,55 @@ form#career-form {
     }
 
     #map {
-        width: 90%;  /* The width is the width of the web page */
+        width: 90%;
         height: 200px;
     }
+}
+
+/* The Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+}
+
+.modal-content { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
