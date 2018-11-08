@@ -7,6 +7,10 @@
     <title>Chef Döner</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
     <link rel="stylesheet" href="./libs/fullPage.js/dist/fullpage.css">
+
+    <link rel="stylesheet" type="text/css" href="./libs/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./libs/slick/slick-theme.css"/>
+
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -98,11 +102,12 @@
     
         <!-- Modal Content (The Image) -->
         <div class="modal-content">
-            <div class="your-class">
-                <img src="./images/menu-slider/burger.jpg" alt="" width="300px" height="200px">
-                <img src="./images/menu-slider/tatlilar.jpg" alt="" width="300px" height="200px">
-                <img src="./images/menu-slider/spesiyaller.jpg" alt="" width="300px" height="200px">
-            </div>
+            <div><img src="./images/menu-slider/burger.jpg" width="100%" alt=""></div>
+            <div><img src="./images/menu-slider/durumler.jpg" width="100%" alt=""></div>
+            <div><img src="./images/menu-slider/patates.jpg" width="100%" alt=""></div>
+            <div><img src="./images/menu-slider/salatalar.jpg" width="100%" alt=""></div>
+            <div><img src="./images/menu-slider/spesiyaller.jpg" width="100%" alt=""></div>
+            <div><img src="./images/menu-slider/tatlilar.jpg" width="100%" alt=""></div>
         </div>
     
         <!-- Modal Caption (Image Text) -->
@@ -113,6 +118,20 @@
     <script src="./libs/fullPage.js/vendors/scrolloverflow.js"></script>
     <script src="./libs/fullPage.js/dist/fullpage.js"></script>
     <script src="./js/main.js"></script>
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.modal-content').slick({
+                autoplay: true
+            });
+        });
+    </script>
 
     <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
