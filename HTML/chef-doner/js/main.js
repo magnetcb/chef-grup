@@ -32,9 +32,9 @@ var myFullpage = new fullpage('#fullpage', {
 /* Google Maps */
 function initMap() {
 	var locations = [
-		['Umraniye', 41.024455, 29.126812, 3],
-		['Tesvikiye Sisli', 41.051208, 28.992764, 2],
-		['Izzetpasa Sisli', 41.068399, 28.984116, 1]
+		["<span style='color: black;'>Fatih Sultan Mehmet Mahallesi, Balkan Cad. Meydan İstanbul AVM No: 64, 34771 Ümraniye/İstanbul</span>", 41.024455, 29.126812, 3],
+		["<span style='color: black;'>Teşvikiye, Teşvikiye Cd. No:12, 34365 Şişli/İstanbul</span>", 41.051208, 28.992764, 2],
+		["<span style='color: black;'>İzzetpaşa Mahallesi, İzzet Paşa Mahallesi Abide-i Hürriyet Caddesi, No: 160/B, 34403 Şişli/İstanbul</span>", 41.068399, 28.984116, 1]
 	  ];
 
 	var istanbul = { lat: 41.0053, lng: 28.9770 };
@@ -44,7 +44,7 @@ function initMap() {
 			center: istanbul
 		});
 
-	var infowindow = new google.maps.InfoWindow();
+	var infoWindow = new google.maps.InfoWindow();
 	var markerIcon = './favicon/favicon-32x32.png';
 	var marker, i;
 	
@@ -57,8 +57,8 @@ function initMap() {
 
 		google.maps.event.addListener(marker, 'click', (function(marker, i) {
 			return function() {
-				infowindow.setContent(locations[i][0]);
-				infowindow.open(map, marker);
+				infoWindow.setContent(locations[i][0]);
+				infoWindow.open(map, marker);
 			}
 		})(marker, i));
 	}
