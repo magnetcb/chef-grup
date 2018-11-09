@@ -123,7 +123,8 @@ nav {
 }
 
 /* Section Globals */
-.section{
+.section,
+.slide {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -183,11 +184,6 @@ nav {
     width: 50%;
 }
 
-mark {
-    color: white;
-    background-color: rgba(0,0,0,0.1);
-}
-
 @media screen and (max-width: 500px) {
     #about {
         background-image: url('../images/about-vertical.png');
@@ -202,10 +198,12 @@ mark {
     }
 
     .about-text {
+        background-color: rgba(220, 191, 106, 0.5);
         margin: auto;
+        padding: 1em 1.5em;
         width: 100%;
         font-size: 0.8em;
-        line-height: 1em;
+        line-height: 1.3em;
     }
 
     mark {
@@ -267,6 +265,15 @@ form#franchising-form {
         margin-top: 120px;
         width: 80%;
     }
+}
+
+/* Gallery SECTION */
+#gallery {
+    padding: 0 !important;
+}
+
+.fp-controlArrow {
+    opacity: 0.2 !important;
 }
 
 /* Career SECTION */
