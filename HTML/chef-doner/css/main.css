@@ -352,7 +352,7 @@ form#career-form {
     display: none;
     position: fixed;
     z-index: 99;
-    padding-top: 12%;
+    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%; 

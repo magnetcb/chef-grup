@@ -30,23 +30,38 @@ var myFullpage = new fullpage('#fullpage', {
 });
 
 /* Google Maps */
-// Initialize and add the map
 function initMap() {
-	// The location of Uluru
-	var uluru = { lat: -25.344, lng: 131.036 };
-	// The map, centered at Uluru
+	var locations = [
+		['Umraniye', 41.024455, 29.126812, 3],
+		['Tesvikiye Sisli', 41.051208, 28.992764, 2],
+		['Izzetpasa Sisli', 41.068399, 28.984116, 1]
+	  ];
+
+	var istanbul = { lat: 41.0053, lng: 28.9770 };
 	var map = new google.maps.Map(
 		document.getElementById('map'), {
-			zoom: 4, 
-			center: uluru
+			zoom: 10, 
+			center: istanbul
 		});
+
+	var infowindow = new google.maps.InfoWindow();
 	var markerIcon = './favicon/favicon-32x32.png';
-	// The marker, positioned at Uluru
-	var marker = new google.maps.Marker({
-		position: uluru, 
-		map: map,
-		icon: markerIcon
-	});
+	var marker, i;
+	
+	for (i = 0; i < locations.length; i++) { 
+		marker = new google.maps.Marker({
+			position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+			map: map,
+			icon: markerIcon
+		});
+
+		google.maps.event.addListener(marker, 'click', (function(marker, i) {
+			return function() {
+				infowindow.setContent(locations[i][0]);
+				infowindow.open(map, marker);
+			}
+		})(marker, i));
+	}
 }
 
 // Get the modal
