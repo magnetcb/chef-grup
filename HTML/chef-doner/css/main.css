@@ -31,7 +31,8 @@ form p {
     font-weight: 500;
 }
 
-form input {
+form input,
+form textarea {
     margin: 1em;
     padding: 1em;
     font-size: 1em;
@@ -50,6 +51,7 @@ form input[type=submit] {
     color: black;
     opacity: 1; /* Firefox */
     font-size: 0.8em;
+    font-family: 'Montserrat', sans-serif;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: black;
@@ -181,6 +183,11 @@ nav {
     width: 50%;
 }
 
+mark {
+    color: white;
+    background-color: rgba(0,0,0,0.1);
+}
+
 @media screen and (max-width: 500px) {
     #about {
         background-image: url('../images/about-vertical.png');
@@ -199,6 +206,11 @@ nav {
         width: 100%;
         font-size: 0.8em;
         line-height: 1em;
+    }
+
+    mark {
+        background-color: rgba(0,0,0,0.5);
+        line-height: 1.5;
     }
 }
 
@@ -289,8 +301,6 @@ form#career-form {
 .contact-wrapper {
     margin: auto;
     width: 75%;
-    border: 10px solid transparent;
-    border-image: url('../images/corner.png') 50 round;
     padding: 1%;
     margin-top: 2em;
 }

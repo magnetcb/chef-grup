@@ -1,3 +1,4 @@
+/* fullPage.js Init */
 var myFullpage = new fullpage('#fullpage', {
 	licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 
@@ -39,10 +40,12 @@ function initMap() {
 			zoom: 4, 
 			center: uluru
 		});
+	var markerIcon = './favicon/favicon-32x32.png';
 	// The marker, positioned at Uluru
 	var marker = new google.maps.Marker({
 		position: uluru, 
-		map: map
+		map: map,
+		icon: markerIcon
 	});
 }
 
