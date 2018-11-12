@@ -36,10 +36,10 @@ function initMap() {
 	// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 	var mapOptions = {
 		// How zoomed in you want the map to start at (always required)
-		zoom: 10,
+		zoom: 11,
 
 		// The latitude and longitude to center the map (always required)
-		center: new google.maps.LatLng(41.051208, 28.992764), // Istanbul
+		center: new google.maps.LatLng(41.084455, 29.056812), // Istanbul
 
 		// How you would like to style the map. 
 		// This is where you would paste any style found on Snazzy Maps.
@@ -55,7 +55,7 @@ function initMap() {
 	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
 	var infoWindow = new google.maps.InfoWindow();
-	var markerIcon = './favicon/favicon-32x32.png';
+	var markerIcon = new google.maps.MarkerImage('./favicon/favicon-32x32.png');
 	var marker, i;
 	
 	for (i = 0; i < locations.length; i++) { 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Chef Döner</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet" />
     <link rel="stylesheet" href="./libs/fullPage.js/dist/fullpage.css" />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -88,10 +88,10 @@
               Chef Döner lezzetlerine ev sahipliği yapmak için aşağıdaki formu
               doldurabilirsiniz.
             </p>
-            <input type="text" id="fullname" placeholder="Ad Soyad" />
-            <input type="email" id="email" placeholder="E-posta" />
-            <input type="text" id="phone" placeholder="Telefon" />
-            <textarea type="text" id="message" placeholder="Eklemek istedikleriniz" rows="2"></textarea>
+            <input type="text" id="fullname" name="full-name" placeholder="Ad Soyad" />
+            <input type="text" id="email" name="email" placeholder="E-posta" />
+            <input type="text" id="phone" name="phone" placeholder="Telefon" />
+            <textarea type="text" id="message" name="message" placeholder="Eklemek istedikleriniz" rows="2"></textarea>
             <input type="submit" value="Gönder" />
           </form>
         </div>
@@ -117,7 +117,7 @@
         <div class="career-wrapper">
           <form id="career-form" action="" method="POST">
             <p>
-              Chef Döner'de karşınıza çıkabilecek pek çok kariyer fırsatı var.
+              Chef Döner'de karşınıza çıkabilecek pek çok kariyer fırsatı var. <br>
               Eğer siz de Chef'lerin lezzet dünyasında bir kariyer
               düşünüyorsanız, bize buradan ulaşmanız yeterli.
             </p>
@@ -149,7 +149,9 @@
                 Maslak Spine Tower <br />
                 <a href="tel:+90212 285 22 85">0212 285 22 85</a>
               </p>
-              <p><a href="mailto:info@chefdoner.com.tr"><i class="fas fa-envelope"></i> info@chefdoner.com.tr</a></p>
+              <p>
+                <a href="mailto:info@chefdoner.com.tr">info@chefdoner.com.tr</a>
+              </p>
             </div>
           </div>
         </div>
@@ -168,7 +170,26 @@
     <script src="./libs/fullPage.js/vendors/easings.js"></script>
     <script src="./libs/fullPage.js/vendors/scrolloverflow.js"></script>
     <script src="./libs/fullPage.js/dist/fullpage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        /* Fix the offset problem when input field invokes mobile keyboard */
+        
+        // Saves the offset when the user clicks the input
+        let initialOffset = $('body').scrollTop();
+        $('input, textarea, select').focus(function(e) {
+            let offset = $(e.target).offset();
+            initialOffset = $('body').scrollTop();
+            $('body').scrollTop(offset.top-100);
+        });
+        $('input, textarea, select').focusout(function(e) {
+            // Reset to the initial offset
+            $('body').scrollTop(initialOffset);
+        });
+      });
+    </script>
 
     <!--
       Load the API from the specified URL
