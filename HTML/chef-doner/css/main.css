@@ -306,9 +306,9 @@ form#franchising-form {
     padding: 0 !important;
 }
 
-#slide1 { background-image: url('../images/gallery/web/galeri.jpg'); }
+#slide1 { background-image: url('../images/gallery/web/galeri02.jpg'); }
 #slide2 { background-image: url('../images/gallery/web/galeri01.jpg'); }
-#slide3 { background-image: url('../images/gallery/web/galeri02.jpg'); }
+#slide3 { background-image: url('../images/gallery/web/galeri.jpg'); }
 #slide4 { background-image: url('../images/gallery/web/galeri03.jpg'); }
 #slide5 { background-image: url('../images/gallery/web/galeri04.jpg'); }
 #slide6 { background-image: url('../images/gallery/web/galeri05.jpg'); }
@@ -321,9 +321,9 @@ form#franchising-form {
 #slide13 { background-image: url('../images/gallery/web/galeri12.jpg'); }
 
 @media screen and (max-width: 500px) {
-    #slide1 { background-image: url('../images/gallery/mobil/galeriMobil01.jpg'); }
-    #slide2 { background-image: url('../images/gallery/mobil/galeriMobil.jpg'); }
-    #slide3 { background-image: url('../images/gallery/mobil/galeriMobil02.jpg'); }
+    #slide1 { background-image: url('../images/gallery/mobil/galeriMobil02.jpg'); }
+    #slide2 { background-image: url('../images/gallery/mobil/galeriMobil01.jpg'); }
+    #slide3 { background-image: url('../images/gallery/mobil/galeriMobil.jpg'); }
     #slide4 { background-image: url('../images/gallery/mobil/galeriMobil03.jpg'); }
     #slide5 { background-image: url('../images/gallery/mobil/galeriMobil04.jpg'); }
     #slide6 { background-image: url('../images/gallery/mobil/galeriMobil05.jpg'); }
@@ -374,11 +374,13 @@ form#career-form {
     width: 75%;
     padding: 1%;
     margin-top: 2em;
+    text-align: left;
 }
 
 #contact-heading {
     min-width: 150px;
     width: 25%;
+    margin-left: 12%;
 } @media screen and (max-width: 768px) {
     #contact-heading {
         visibility: hidden;
@@ -389,6 +391,7 @@ form#career-form {
     display: flex;
     flex-direction: row;
     margin: 1em;
+    text-align: center;
 }
 
 #map {
@@ -403,6 +406,7 @@ form#career-form {
 }
 
 .info p {
+    font-size: 1.25em;
     line-height: 1.5;
 }
 
@@ -424,6 +428,11 @@ form#career-form {
     .info {
         margin: auto;
         width: 100%;
+    }
+
+    .info p {
+        font-size: 1em;
+        line-height: 1.5;
     }
 }
 
