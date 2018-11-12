@@ -279,6 +279,77 @@ nav {
     background-color: #dcbf6a;
 }
 
+/* The Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .modal {
+        padding-top: 70px;
+    }
+
+    .modal-content {
+        width: 75%;
+        min-height: 90%;
+        height: 90%;
+    }
+}
+
+.modal-content { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#menu-mobile {
+    display: none;
+} @media screen and (max-width: 500px) {
+    #menu-mobile {
+        display: block;
+    }
+
+    #menu-web {
+        display: none;
+    }
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* Franchising SECTION */
 #franchising {
     background-image: url('../images/franchising.png');
@@ -434,75 +505,4 @@ form#career-form {
         font-size: 1em;
         line-height: 1.5;
     }
-}
-
-/* The Modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 99;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-.modal-content {
-    margin: auto;
-    width: 80%;
-}
-
-@media screen and (max-width: 768px) {
-    .modal {
-        padding-top: 70px;
-    }
-
-    .modal-content {
-        width: 75%;
-        min-height: 90%;
-        height: 90%;
-    }
-}
-
-.modal-content { 
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-#menu-mobile {
-    display: none;
-} @media screen and (max-width: 500px) {
-    #menu-mobile {
-        display: block;
-    }
-
-    #menu-web {
-        display: none;
-    }
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
 }
