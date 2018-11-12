@@ -272,6 +272,18 @@ form#franchising-form {
     padding: 0 !important;
 }
 
+#gallery #mobile {
+    display: none;
+} @media screen and (max-width: 500px) {
+    #gallery #web {
+        display: none;
+    }
+    
+    #gallery #mobile {
+        display: block;
+    }
+}
+
 .fp-controlArrow {
     opacity: 0.2 !important;
 }
