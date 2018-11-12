@@ -82,6 +82,11 @@ form input[type=submit] {
     font-size: 0.8em;
 }
 
+img.icon{  
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
 /* Header and Footer */
 #header, #footer{
     position: fixed;
@@ -184,7 +189,7 @@ nav {
     }
 
     #home .heading-container img {
-        width: 60%;
+        width: 70%;
     }
 }
 
@@ -233,6 +238,10 @@ nav {
         font-size: 0.8em;
         letter-spacing: 0.5px;
         line-height: 1.3em;
+    }
+
+    .about-text img {
+        width: 75%;
     }
 }
 
