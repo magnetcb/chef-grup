@@ -485,6 +485,8 @@ form#career-form {
     font-size: 1.25em;
     line-height: 1.5;
 }
+#social-media { margin-top: 20px; }
+#social-media a { margin: 10px; }
 
 @media screen and (max-width: 768px) {
     .contact-wrapper {
