@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="Description" content="Chef Döner resmi web sitesi.">
+
     <title>Chef Döner</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet" />
     <link rel="stylesheet" href="./libs/fullPage.js/dist/fullpage.css" />
@@ -153,9 +156,9 @@
                 <a href="mailto:info@chefdoner.com.tr">info@chefdoner.com.tr</a>
               </p>
               <div id="social-media">
-                <a href="https://tr-tr.facebook.com/chefdonersisli/" target="_blank"><i class="fab fa-2x fa-facebook"></i></a>
-                <a href="https://twitter.com/chefdoner" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
-                <a href="https://www.instagram.com/chefdonergroup/" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+                <a rel="noopener" href="https://tr-tr.facebook.com/chefdonersisli/" target="_blank"><i class="fab fa-2x fa-facebook"></i></a>
+                <a rel="noopener" href="https://twitter.com/chefdoner" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
+                <a rel="noopener" href="https://www.instagram.com/chefdonergroup/" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -177,6 +180,7 @@
     <script src="./libs/fullPage.js/dist/fullpage.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/modernizr-custom.js"></script>
 
     <script>
       $(document).ready(function() {
@@ -193,6 +197,17 @@
               // Reset to the initial offset
               $('body').scrollTop(initialOffset);
           });
+        }
+      });
+
+      Modernizr.on('webp', function (result) {
+        // `result == Modernizr.webp`
+        console.log(result);  // either `true` or `false`
+        if (result) {
+          // Has WebP support
+        }
+        else {
+          // No WebP support
         }
       });
     </script>

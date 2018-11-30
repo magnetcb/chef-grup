@@ -176,10 +176,17 @@ nav {
 #home .heading-container img {
     max-width: 460px;
 }
-#home {
+.webp #home {
+    background-image: url('../images/webP/home.webp');
+}
+.no-webp #home {
     background-image: url('../images/home.png');
 } @media only screen and (max-width: 500px) {
-    #home {
+    .webp #home {
+        background-position: top;
+        background-image: url('../images/webP/home-vertical.webp');
+    }
+    .no-webp #home {
         background-position: top;
         background-image: url('../images/home-vertical.png');
     }
@@ -196,7 +203,11 @@ nav {
 }
 
 /* About SECTION */
-#about {
+.webp #about {
+    background-image: url('../images/webP/about.webp');
+}
+
+.no-webp #about {
     background-image: url('../images/about.png');
 }
 
@@ -222,7 +233,11 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
-    #about {
+    .webp #about {
+        background-image: url('../images/webP/about-vertical.webp');
+    }
+
+    .no-webp #about {
         background-image: url('../images/about-vertical.png');
     }
 
@@ -253,10 +268,17 @@ nav {
 #menu .menu-wrapper {
     margin-right: 25%;
 }
-#menu {
+.webp #menu {
+    background-image: url('../images/webP/menu.webp');
+}
+.no-webp #menu {
     background-image: url('../images/menu.png');
 } @media screen and (max-width: 500px) {
-    #menu {
+    .webp #menu {
+        background-image: url('../images/webP/menu-vertical.webp');
+    }
+
+    .no-webp #menu {
         background-image: url('../images/menu-vertical.png');
     }
 
@@ -354,7 +376,11 @@ nav {
 }
 
 /* Franchising SECTION */
-#franchising {
+.webp #franchising {
+    background-image: url('../images/webP/franchising.webp');
+}
+
+.no-webp #franchising {
     background-image: url('../images/franchising.png');
 }
 
@@ -364,7 +390,11 @@ form#franchising-form {
 }
 
 @media screen and (max-width: 500px) {
-    #franchising {
+    .webp #franchising {
+        background-image: url('../images/webP/franchising-vertical.webp');
+    }
+
+    .no-webp #franchising {
         background-image: url('../images/franchising-vertical.png');
     }
 
@@ -380,34 +410,62 @@ form#franchising-form {
     padding: 0 !important;
 }
 
-#slide1 { background-image: url('../images/gallery/web/galeri02.jpg'); }
-#slide2 { background-image: url('../images/gallery/web/galeri01.jpg'); }
-#slide3 { background-image: url('../images/gallery/web/galeri.jpg'); }
-#slide4 { background-image: url('../images/gallery/web/galeri03.jpg'); }
-#slide5 { background-image: url('../images/gallery/web/galeri04.jpg'); }
-#slide6 { background-image: url('../images/gallery/web/galeri05.jpg'); }
-#slide7 { background-image: url('../images/gallery/web/galeri06.jpg'); }
-#slide8 { background-image: url('../images/gallery/web/galeri07.jpg'); }
-#slide9 { background-image: url('../images/gallery/web/galeri08.jpg'); }
-#slide10 { background-image: url('../images/gallery/web/galeri09.jpg'); }
-#slide11 { background-image: url('../images/gallery/web/galeri10.jpg'); }
-#slide12 { background-image: url('../images/gallery/web/galeri11.jpg'); }
-#slide13 { background-image: url('../images/gallery/web/galeri12.jpg'); }
+.no-webp #slide1 { background-image: url('../images/gallery/web/galeri02.jpg'); }
+.no-webp #slide2 { background-image: url('../images/gallery/web/galeri01.jpg'); }
+.no-webp #slide3 { background-image: url('../images/gallery/web/galeri.jpg'); }
+.no-webp #slide4 { background-image: url('../images/gallery/web/galeri03.jpg'); }
+.no-webp #slide5 { background-image: url('../images/gallery/web/galeri04.jpg'); }
+.no-webp #slide6 { background-image: url('../images/gallery/web/galeri05.jpg'); }
+.no-webp #slide7 { background-image: url('../images/gallery/web/galeri06.jpg'); }
+.no-webp #slide8 { background-image: url('../images/gallery/web/galeri07.jpg'); }
+.no-webp #slide9 { background-image: url('../images/gallery/web/galeri08.jpg'); }
+.no-webp #slide10 { background-image: url('../images/gallery/web/galeri09.jpg'); }
+.no-webp #slide11 { background-image: url('../images/gallery/web/galeri10.jpg'); }
+.no-webp #slide12 { background-image: url('../images/gallery/web/galeri11.jpg'); }
+.no-webp #slide13 { background-image: url('../images/gallery/web/galeri12.jpg'); }
+
+.webp #slide1 { background-image: url('../images/webP/gallery/web/galeri02.webp'); }
+.webp #slide2 { background-image: url('../images/webP/gallery/web/galeri01.webp'); }
+.webp #slide3 { background-image: url('../images/webP/gallery/web/galeri.webp'); }
+.webp #slide4 { background-image: url('../images/webP/gallery/web/galeri03.webp'); }
+.webp #slide5 { background-image: url('../images/webP/gallery/web/galeri04.webp'); }
+.webp #slide6 { background-image: url('../images/webP/gallery/web/galeri05.webp'); }
+.webp #slide7 { background-image: url('../images/webP/gallery/web/galeri06.webp'); }
+.webp #slide8 { background-image: url('../images/webP/gallery/web/galeri07.webp'); }
+.webp #slide9 { background-image: url('../images/webP/gallery/web/galeri08.webp'); }
+.webp #slide10 { background-image: url('../images/webP/gallery/web/galeri09.webp'); }
+.webp #slide11 { background-image: url('../images/webP/gallery/web/galeri10.webp'); }
+.webp #slide12 { background-image: url('../images/webP/gallery/web/galeri11.webp'); }
+.webp #slide13 { background-image: url('../images/webP/gallery/web/galeri12.webp'); }
 
 @media screen and (max-width: 500px) {
-    #slide1 { background-image: url('../images/gallery/mobil/galeriMobil02.jpg'); }
-    #slide2 { background-image: url('../images/gallery/mobil/galeriMobil01.jpg'); }
-    #slide3 { background-image: url('../images/gallery/mobil/galeriMobil.jpg'); }
-    #slide4 { background-image: url('../images/gallery/mobil/galeriMobil03.jpg'); }
-    #slide5 { background-image: url('../images/gallery/mobil/galeriMobil04.jpg'); }
-    #slide6 { background-image: url('../images/gallery/mobil/galeriMobil05.jpg'); }
-    #slide7 { background-image: url('../images/gallery/mobil/galeriMobil06.jpg'); }
-    #slide8 { background-image: url('../images/gallery/mobil/galeriMobil07.jpg'); }
-    #slide9 { background-image: url('../images/gallery/mobil/galeriMobil08.jpg'); }
-    #slide10 { background-image: url('../images/gallery/mobil/galeriMobil09.jpg'); }
-    #slide11 { background-image: url('../images/gallery/mobil/galeriMobil10.jpg'); }
-    #slide12 { background-image: url('../images/gallery/mobil/galeriMobil11.jpg'); }
-    #slide13 { background-image: url('../images/gallery/mobil/galeriMobil12.jpg'); }
+    .no-webp #slide1 { background-image: url('../images/gallery/mobil/galeriMobil02.jpg'); }
+    .no-webp #slide2 { background-image: url('../images/gallery/mobil/galeriMobil01.jpg'); }
+    .no-webp #slide3 { background-image: url('../images/gallery/mobil/galeriMobil.jpg'); }
+    .no-webp #slide4 { background-image: url('../images/gallery/mobil/galeriMobil03.jpg'); }
+    .no-webp #slide5 { background-image: url('../images/gallery/mobil/galeriMobil04.jpg'); }
+    .no-webp #slide6 { background-image: url('../images/gallery/mobil/galeriMobil05.jpg'); }
+    .no-webp #slide7 { background-image: url('../images/gallery/mobil/galeriMobil06.jpg'); }
+    .no-webp #slide8 { background-image: url('../images/gallery/mobil/galeriMobil07.jpg'); }
+    .no-webp #slide9 { background-image: url('../images/gallery/mobil/galeriMobil08.jpg'); }
+    .no-webp #slide10 { background-image: url('../images/gallery/mobil/galeriMobil09.jpg'); }
+    .no-webp #slide11 { background-image: url('../images/gallery/mobil/galeriMobil10.jpg'); }
+    .no-webp #slide12 { background-image: url('../images/gallery/mobil/galeriMobil11.jpg'); }
+    .no-webp #slide13 { background-image: url('../images/gallery/mobil/galeriMobil12.jpg'); }
+
+    .webp #slide1 { background-image: url('../images/webP/gallery/mobil/galeriMobil02.webp'); }
+    .webp #slide2 { background-image: url('../images/webP/gallery/mobil/galeriMobil01.webp'); }
+    .webp #slide3 { background-image: url('../images/webP/gallery/mobil/galeriMobil.webp'); }
+    .webp #slide4 { background-image: url('../images/webP/gallery/mobil/galeriMobil03.webp'); }
+    .webp #slide5 { background-image: url('../images/webP/gallery/mobil/galeriMobil04.webp'); }
+    .webp #slide6 { background-image: url('../images/webP/gallery/mobil/galeriMobil05.webp'); }
+    .webp #slide7 { background-image: url('../images/webP/gallery/mobil/galeriMobil06.webp'); }
+    .webp #slide8 { background-image: url('../images/webP/gallery/mobil/galeriMobil07.webp'); }
+    .webp #slide9 { background-image: url('../images/webP/gallery/mobil/galeriMobil08.webp'); }
+    .webp #slide10 { background-image: url('../images/webP/gallery/mobil/galeriMobil09.webp'); }
+    .webp #slide11 { background-image: url('../images/webP/gallery/mobil/galeriMobil10.webp'); }
+    .webp #slide12 { background-image: url('../images/webP/gallery/mobil/galeriMobil11.webp'); }
+    .webp #slide13 { background-image: url('../images/webP/gallery/mobil/galeriMobil12.webp'); }
 }
 
 .fp-controlArrow {
@@ -415,7 +473,11 @@ form#franchising-form {
 }
 
 /* Career SECTION */
-#career {
+.webp #career {
+    background-image: url('../images/webP/career.webp');
+}
+
+.no-webp #career {
     background-image: url('../images/career.png');
 }
 
@@ -425,7 +487,11 @@ form#career-form {
 }
 
 @media screen and (max-width: 768px) {
-    #career {
+    .webp #career {
+        background-image: url('../images/webP/career-vertical.webp');
+    }
+
+    .no-webp #career {
         background-image: url('../images/career-vertical.png');
     }
 
@@ -437,10 +503,17 @@ form#career-form {
 }
 
 /* Contact SECTION */
-#contact {
+.webp #contact {
+    background-image: url('../images/webP/contact.webp');
+}
+.no-webp #contact {
     background-image: url('../images/contact.png');
 } @media screen and (max-width: 500px) {
-    #contact {
+    .webp #contact {
+        background-image: url('../images/webP/contact-vertical.webp');
+    }
+
+    .no-webp #contact {
         background-image: url('../images/contact-vertical.png');
     }
 }
