@@ -475,7 +475,7 @@ nav {
 }
 
 .no-webp #career {
-    background-image: url('../images/career.png');
+    background-image: url('../images/career.jpg');
 }
 
 #career-form {
@@ -485,11 +485,11 @@ nav {
 
 @media screen and (max-width: 768px) {
     .webp #career {
-        background-image: url('../images/career-vertical.png');
+        background-image: url('../images/career-vertical.jpg');
     }
 
     .no-webp #career {
-        background-image: url('../images/career-vertical.png');
+        background-image: url('../images/career-vertical.jpg');
     }
 
     #career-form {
