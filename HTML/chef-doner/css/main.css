@@ -1,10 +1,12 @@
 /* Global Styles */
+html {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-weight: 300;
     font-size: 1em;
-    box-sizing: border-box;
 }
 
 a {
@@ -194,7 +196,6 @@ nav {
         margin: auto;
         padding: 1em;
         padding-bottom: 220px;
-        padding-left: 75px;
     }
 
     #home .heading-container img {
@@ -384,7 +385,7 @@ nav {
     background-image: url('../images/franchising.png');
 }
 
-form#franchising-form {
+#franchising-form {
     margin-right: 15%;
     width: 30%;
 }
@@ -398,7 +399,7 @@ form#franchising-form {
         background-image: url('../images/franchising-vertical.png');
     }
 
-    form#franchising-form {
+    #franchising-form {
         margin: auto;
         margin-top: 120px;
         width: 90%;
@@ -406,10 +407,6 @@ form#franchising-form {
 }
 
 /* Gallery SECTION */
-#gallery {
-    padding: 0 !important;
-}
-
 .no-webp #slide1 { background-image: url('../images/gallery/web/galeri02.jpg'); }
 .no-webp #slide2 { background-image: url('../images/gallery/web/galeri01.jpg'); }
 .no-webp #slide3 { background-image: url('../images/gallery/web/galeri.jpg'); }
@@ -481,21 +478,21 @@ form#franchising-form {
     background-image: url('../images/career.png');
 }
 
-form#career-form {
+#career-form {
     width: 30%;
     margin-left: 15%;
 }
 
 @media screen and (max-width: 768px) {
     .webp #career {
-        background-image: url('../images/webP/career-vertical.webp');
+        background-image: url('../images/career-vertical.png');
     }
 
     .no-webp #career {
         background-image: url('../images/career-vertical.png');
     }
 
-    form#career-form {
+    #career-form {
         margin: auto;
         margin-top: 120px;
         width: 90%;
@@ -521,7 +518,6 @@ form#career-form {
 .contact-wrapper {
     margin: auto;
     width: 75%;
-    padding: 1%;
     margin-top: 2em;
     text-align: left;
 }

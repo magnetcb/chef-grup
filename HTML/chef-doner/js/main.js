@@ -6,11 +6,6 @@ var myFullpage = new fullpage('#fullpage', {
 	menu: '#navbar',
 	lockAnchors: false,
 	anchors:['homePage', 'aboutPage', 'menuPage', 'franchisingPage','galleryPage', 'careerPage', 'contactPage'],
-	navigation: false,
-	navigationPosition: 'left',
-	showActiveTooltip: false,
-	slidesNavigation: false,
-	slidesNavPosition: 'bottom',
 
 	//Scrolling
 	scrollOverflow: true,
@@ -22,9 +17,7 @@ var myFullpage = new fullpage('#fullpage', {
 
 	//Design
 	verticalCentered: true,
-	paddingTop: '3em',
-	paddingBottom: '10px',
-	responsiveSlides: false,
+	responsiveWidth: 1100,
 	parallax: false,
 	parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'}
 });
