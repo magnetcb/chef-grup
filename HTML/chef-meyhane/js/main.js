@@ -45,7 +45,6 @@ var img = document.getElementById('fix-menu-info');
 var modalImg = document.getElementById("modal-image");
 img.onclick = function(){
     modal.style.display = "block";
-    modalImg.src = './images/fix-menu.jpg';
 }
 
 // Get the <span> element that closes the modal

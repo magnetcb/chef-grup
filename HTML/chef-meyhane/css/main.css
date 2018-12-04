@@ -115,6 +115,13 @@ a {
     font-weight: 400;
 }
 
+.lang-change-link {
+    border-radius: 5px;
+    background-color: #00abbe;
+    color: white;
+    padding: 0.5em 1em;
+}
+
 @media screen and (max-width: 768px) {
     .nav-wrapper {
         padding: 0;
